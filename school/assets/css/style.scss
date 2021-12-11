@@ -2,16 +2,16 @@
 
 //breakpoints
 $breakpoints: (
-    "sm": "(max-width: 767px)",
-    "md": "(min-width: 768px) and (max-width: 1024px)",
-    "lg": "(min-width: 1025px)",
+  "sm": "(max-width: 767px)",
+  "md": "(min-width: 768px) and (max-width: 1024px)",
+  "lg": "(min-width: 1025px)",
 );
 
 //media
-@mixin mq($breakpoint: sm){
-    @media #{map-get($breakpoints, $breakpoint)}{
-        @content;
-    }
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
 }
 
 //school_variables
@@ -26,109 +26,231 @@ $Tcolor: tomato;
 $Pcolor: #feeef5;
 $Wcolor: #fff;
 
-body {
-  box-sizing: border-box;
-  font-size: 16px;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.contentWidth{
-    max-width: 100%;
-    margin: 0 auto;
+
+body {
+  font-size: 16px;
+  max-width: 100%;
+  word-break: break-all;
+}
+.contentWidth {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+
+  @include mq(lg) {
     width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.sp-only {
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
+  @include mq(lg) {
+    display: none;
+  }
 }
 //mainVisual
 .mainVisual {
+  @include mq(md){
+    position: relative;
+  }
+  @include mq(lg){
+    position: relative;
+  }
 }
 .mainVisual__top {
   background: url("../img/mv.png") no-repeat center center / cover;
   padding: 3rem 0;
-  height: 100vh;
+  height: 500px;
+  @include mq(md){
+    height: 700px;
+  }
   @include mq(lg){
-      height: 400px;
+    height: 100vh;
   }
   &--text {
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
-    padding: 3rem 0;
-    margin-top: 100px;
+    padding: 1rem 0;
+    margin-top: 30px;
     h1 {
       color: $MBcolor;
       font-size: 2.5rem;
       letter-spacing: 0.3rem;
       font-weight: 700;
+      @include mq(md) {
+        font-size: 72px;
+      }
+      @include mq(lg) {
+        font-size: 93px;
+        letter-spacing: 0.8rem;
+      }
     }
     p {
       font-size: 16px;
+      @include mq(md) {
+        font-size: 18px;
+      }
+      @include mq(lg) {
+        font-size: 24px;
+      }
     }
   }
 }
 .mainVisual__bottom {
-    text-align: center;
+  text-align: center;
+  @include mq(md) {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @include mq(lg) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   &--text {
     background: -moz-linear-gradient(
       left,
-      rgba(224, 96, 96, 0.8),
-      rgba(224, 128, 128, 0.8) 30%,
-      rgba(224, 160, 160, 0.8)
+      rgba(224, 96, 96, 0.5),
+      rgba(224, 128, 128, 0.5) 30%,
+      rgba(224, 160, 160, 0.5)
     );
     background: -webkit-linear-gradient(
       left,
-      rgba(224, 96, 96, 0.8),
-      rgba(224, 128, 128, 0.8) 30%,
-      rgba(224, 160, 160, 0.8)
+      rgba(224, 96, 96, 0.5),
+      rgba(224, 128, 128, 0.5) 30%,
+      rgba(224, 160, 160, 0.5)
     );
     background: linear-gradient(
       to right,
-      rgba(224, 96, 96, 0.8),
-      rgba(224, 128, 128, 0.8) 30%,
-      rgba(224, 160, 160, 0.8)
+      rgba(224, 96, 96, 0.5),
+      rgba(224, 128, 128, 0.5) 30%,
+      rgba(224, 160, 160, 0.5)
     );
     color: $Wcolor;
-    text-align: center;
-    border: 3px solid $Pcolor;
+    padding: 1rem;
+    @include mq(md) {
+      width: calc(60% - 30px * 1 / 2);
+      margin-right: 30px;
+      margin-top: 50px;
+      height: 200px;
+      margin-left: 30px;
+    }
+    @include mq(lg) {
+      width: calc(60% - 30px * 1 / 2);
+      margin-right: 30px;
+      margin-top: 50px;
+      height: 300px;
+      margin-left: 30px;
+
+    }
     &-inner {
-      margin: 1rem;
-      padding: 1rem;
+      height: 100%;
+      text-align: center;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       background: -moz-linear-gradient(
         left,
-        rgba(224, 96, 96, 0.8),
-        rgba(224, 128, 128, 0.8) 30%,
-        rgba(224, 160, 160, 0.8)
+        rgba(224, 96, 96, 0.5),
+        rgba(224, 128, 128, 0.5) 30%,
+        rgba(224, 160, 160, 0.5)
       );
       background: -webkit-linear-gradient(
         left,
-        rgba(224, 96, 96, 0.8),
-        rgba(224, 128, 128, 0.8) 30%,
-        rgba(224, 160, 160, 0.8)
+        rgba(224, 96, 96, 0.5),
+        rgba(224, 128, 128, 0.5) 30%,
+        rgba(224, 160, 160, 0.5)
       );
       background: linear-gradient(
         to right,
-        rgba(224, 96, 96, 0.8),
-        rgba(224, 128, 128, 0.8) 30%,
-        rgba(224, 160, 160, 0.8)
+        rgba(224, 96, 96, 0.5),
+        rgba(224, 128, 128, 0.5) 30%,
+        rgba(224, 160, 160, 0.5)
       );
+      @include mq(md){
+        text-align: left;
+      }
+      @include mq(lg){
+        text-align: left;
+      }
 
       p {
         font-weight: 700;
-        font-size: 120%;
+        font-size: 18px;
+        @include mq(md) {
+          font-size: 21px;
+        }
+        @include mq(lg) {
+          font-size: 40px;
+        }
         &:nth-child(2) {
           font-weight: 400;
-          font-size: 100%;
+          font-size: 18px;
+          @include mq(md) {
+            font-size: 18px;
+          }
+          @include mq(lg) {
+            font-size: 24px;
+          }
         }
       }
       h2 {
         font-weight: 700;
-        font-size: 170%;
+        font-size: 26px;
         line-height: 1.2;
+        @include mq(md) {
+          font-size: 32px;
+        }
+        @include mq(lg) {
+          font-size: 60px;
+          letter-spacing: 0.8rem;
+        }
       }
     }
   }
   &--img {
     display: inline-block;
     text-align: center;
+    min-width: 320px;
+    width: 70%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 15px;
+    @include mq(md) {
+      width: calc(40% - 30px * 1 / 2);
+      height: auto;
+      display: flex;
+      align-items: flex-end;
+    }
+    @include mq(lg) {
+      width: calc(40% - 30px * 1 / 2);
+      height: auto;
+      display: flex;
+      align-items: flex-end;
+    }
     img {
-        width: 100%;
-        height: auto;
-        vertical-align: bottom;
+      display: inline-block;
+      width: 100%;
+      vertical-align: bottom;
     }
   }
 }

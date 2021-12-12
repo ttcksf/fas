@@ -50,6 +50,18 @@ body {
     padding-right: 0;
   }
 }
+.contentInner {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include mq(md) {
+    padding: 0 30px;
+  }
+  @include mq(lg) {
+    max-width: 1200px;
+    padding: 0 150px;
+  }
+}
 .sp-only {
   display: block;
   @include mq(md) {
@@ -67,6 +79,9 @@ body {
   @include mq(lg) {
     display: block;
   }
+}
+.Ounder {
+  background: linear-gradient(transparent 70%, $LOcolor 30%);
 }
 //mainVisual
 .mainVisual {
@@ -301,12 +316,12 @@ body {
       top: 15px;
       left: 0;
       @include mq(md) {
-      top: 20px;
+        top: 20px;
         border: 20px solid transparent;
         border-top-color: $BBcolor;
       }
       @include mq(lg) {
-      top: 30px;
+        top: 30px;
         border: 35px solid transparent;
         border-top-color: $BBcolor;
       }
@@ -322,12 +337,12 @@ body {
       top: 13px;
       right: 0;
       @include mq(md) {
-      top: 20px;
+        top: 20px;
         border: 20px solid transparent;
         border-top-color: $BBcolor;
       }
       @include mq(lg) {
-      top: 30px;
+        top: 30px;
 
         border: 35px solid transparent;
         border-top-color: $BBcolor;
@@ -340,13 +355,13 @@ body {
     img {
     }
   }
-  .question__description{
+  .question__description {
     margin-top: 30px;
     background: $Rcolor;
     text-align: center;
     position: relative;
     padding: 1rem 2rem;
-    &:after{
+    &:after {
       content: "";
       position: absolute;
       right: 0;
@@ -358,28 +373,191 @@ body {
       border-style: solid;
       border-color: $Rcolor transparent transparent transparent;
       border-width: 20px 20px 0 20px;
-      @include mq(lg){
-      border-width: 30px 40px 0 40px;
+      @include mq(lg) {
+        border-width: 30px 40px 0 40px;
       }
     }
-    p{
+    p {
       color: $Wcolor;
       font-weight: 700;
       font-size: 14px;
-      @include mq(md){
+      @include mq(md) {
         font-size: 18px;
       }
-      @include mq(lg){
+      @include mq(lg) {
         font-size: 34px;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         font-size: 20px;
-        @include mq(md){
+        @include mq(md) {
           font-size: 32px;
         }
-        @include mq(lg){
+        @include mq(lg) {
           font-size: 45px;
         }
+      }
+    }
+  }
+}
+.merit {
+  background: url("../img/bg-merit.png") no-repeat center center / cover;
+}
+.merit__inner {
+}
+.merit__head {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 40px 0 30px;
+  @include mq(md) {
+    font-size: 32px;
+  }
+  @include mq(lg) {
+    font-size: 60px;
+  }
+  img {
+    width: 180px;
+    vertical-align: baseline;
+    @include mq(md) {
+      width: 240px;
+    }
+    @include mq(lg) {
+      width: 480px;
+    }
+  }
+}
+.merit__lists {
+  display: flex;
+  justify-content: center;
+  background: $Wcolor;
+  padding: 2rem 1rem;
+}
+.merit__lists--inner {
+  width: 100%;
+  @include mq(md) {
+    width: 90%;
+  }
+  @include mq(lg) {
+    width: 70%;
+  }
+}
+.merit__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  &:first-child {
+    margin-top: 0;
+  }
+  &--num {
+    min-width: 55px;
+    min-height: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $BBcolor;
+    color: $Wcolor;
+    font-size: 20px;
+    @include mq(md) {
+      font-size: 28px;
+    }
+    @include mq(lg) {
+      font-size: 36px;
+    }
+  }
+  &--text {
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    @include mq(md) {
+      font-size: 20px;
+    }
+    @include mq(lg) {
+      font-size: 26px;
+    }
+  }
+}
+.merit__description {
+  margin-top: 30px;
+  text-align: center;
+  &--top {
+    p {
+      color: $Rcolor;
+      font-size: 18px;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+      padding: 0 45px;
+      @include mq(md) {
+        font-size: 20px;
+      }
+      @include mq(lg) {
+        font-size: 26px;
+      }
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        background: $Rcolor;
+        width: 44px;
+        height: 2px;
+      }
+      &::before {
+        -moz-transform: rotate(60deg);
+        -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+        transform: rotate(60deg);
+        left: 0;
+      }
+      &:after {
+        right: 0;
+        -moz-transform: rotate(-60deg);
+        -webkit-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+      }
+      &:nth-child(3) {
+        color: #333;
+        position: static;
+      }
+    }
+  }
+  &--bottom {
+    @include mq(md){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include mq(lg){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h2 {
+      color: $Rcolor;
+      font-weight: 700;
+      font-size: 20px;
+      margin-top: 30px;
+      @include mq(md){
+        font-size: 28px;
+      }
+      @include mq(lg){
+        font-size: 40px;
+      }
+    }
+    img {
+      display: inline-block;
+      padding-bottom: 30px;
+      @include mq(md){
+        width: 200px;
+      }
+      @include mq(lg){
+        width: 320px;
       }
     }
   }

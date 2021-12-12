@@ -25,6 +25,25 @@ body {
   }
 }
 
+.contentInner {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contentInner {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .contentInner {
+    max-width: 1200px;
+    padding: 0 150px;
+  }
+}
+
 .sp-only {
   display: block;
 }
@@ -55,6 +74,10 @@ body {
   .pc-only {
     display: block;
   }
+}
+
+.Ounder {
+  background: linear-gradient(transparent 70%, #f0a537 30%);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -447,6 +470,227 @@ body {
 @media (min-width: 1025px) {
   .question .question__description p:nth-child(2) {
     font-size: 45px;
+  }
+}
+
+.merit {
+  background: url("../img/bg-merit.png") no-repeat center center/cover;
+}
+
+.merit__head {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 40px 0 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .merit__head {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .merit__head {
+    font-size: 60px;
+  }
+}
+
+.merit__head img {
+  width: 180px;
+  vertical-align: baseline;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .merit__head img {
+    width: 240px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .merit__head img {
+    width: 480px;
+  }
+}
+
+.merit__lists {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding: 2rem 1rem;
+}
+
+.merit__lists--inner {
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .merit__lists--inner {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .merit__lists--inner {
+    width: 70%;
+  }
+}
+
+.merit__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.merit__list:first-child {
+  margin-top: 0;
+}
+
+.merit__list--num {
+  min-width: 55px;
+  min-height: 50px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #003a6a;
+  color: #fff;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .merit__list--num {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .merit__list--num {
+    font-size: 36px;
+  }
+}
+
+.merit__list--text {
+  padding-left: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .merit__list--text {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .merit__list--text {
+    font-size: 26px;
+  }
+}
+
+.merit__description {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.merit__description--top p {
+  color: #ff5053;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding: 0 45px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .merit__description--top p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .merit__description--top p {
+    font-size: 26px;
+  }
+}
+
+.merit__description--top p:before, .merit__description--top p:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  background: #ff5053;
+  width: 44px;
+  height: 2px;
+}
+
+.merit__description--top p::before {
+  transform: rotate(60deg);
+  left: 0;
+}
+
+.merit__description--top p:after {
+  right: 0;
+  transform: rotate(-60deg);
+}
+
+.merit__description--top p:nth-child(3) {
+  color: #333;
+  position: static;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .merit__description--bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .merit__description--bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.merit__description--bottom h2 {
+  color: #ff5053;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .merit__description--bottom h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .merit__description--bottom h2 {
+    font-size: 40px;
+  }
+}
+
+.merit__description--bottom img {
+  display: inline-block;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .merit__description--bottom img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .merit__description--bottom img {
+    width: 320px;
   }
 }
 /*# sourceMappingURL=style.css.map */

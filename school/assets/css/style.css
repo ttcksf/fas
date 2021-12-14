@@ -80,6 +80,10 @@ body {
   background: linear-gradient(transparent 70%, #f0a537 30%);
 }
 
+.Bunder {
+  text-decoration: underline wavy #45e6de;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .mainVisual {
     position: relative;
@@ -854,6 +858,7 @@ body {
   text-align: center;
   padding: 0.5rem 1rem;
   position: relative;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -865,8 +870,9 @@ body {
 
 @media (min-width: 1025px) {
   .problem__example--Fn h2 {
-    font-size: 45px;
+    font-size: 38px;
     padding: 4rem 2rem;
+    width: 768px;
   }
 }
 
@@ -891,8 +897,8 @@ body {
 
 @media (min-width: 1025px) {
   .problem__example--Fn h2:after {
-    border-right: calc(50vw - 270px) solid transparent;
-    border-left: calc(50vw - 270px) solid transparent;
+    border-right: 390px solid transparent;
+    border-left: 390px solid transparent;
     border-top: 60px solid #003a6a;
   }
 }
@@ -905,6 +911,10 @@ body {
 @media (min-width: 1025px) {
   .problem__example--Fn-functions {
     background: #efefef;
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 50px;
+    justify-content: center;
   }
 }
 
@@ -913,6 +923,11 @@ body {
   margin-right: 15px;
   margin-top: 15px;
   background: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
 .problem__example--Fn-function:nth-child(2n) {
@@ -926,13 +941,128 @@ body {
 @media (min-width: 1025px) {
   .problem__example--Fn-function {
     background: transparent;
-    width: calc(25% - 30px * 3 / 4);
+    width: 25%;
     margin-right: 30px;
-    border-left: 1px solid #fff;
+    border-left: 2px solid #fff;
+    margin: 50px 0 0 0;
   }
-  .problem__example--Fn-function:last-child {
-    border-right: 1px solid #fff;
-    margin-right: 0;
+  .problem__example--Fn-function:nth-child(4) {
+    border-right: 2px solid #fff;
+  }
+}
+
+.problem__example--Fn-function img {
+  display: inline-block;
+  width: 45px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .problem__example--Fn-function img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .problem__example--Fn-function img {
+    margin-bottom: 30px;
+  }
+}
+
+.problem__example--Fn-function p {
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.problem__example--fact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .problem__example--fact {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .problem__example--fact {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.problem__example--fact p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .problem__example--fact p {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .problem__example--fact p {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .problem__example--fact p:nth-child(2) {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .problem__example--fact p:nth-child(2) {
+    font-size: 54px;
+  }
+}
+
+.reason {
+  margin-top: 50px;
+}
+
+.reason__head h1 {
+  text-align: center;
+  font-size: 20px;
+  color: #003a6a;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reason__head h1 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .reason__head h1 {
+    font-size: 50px;
+  }
+}
+
+.reason__head h1 span {
+  color: #fff;
+  -webkit-text-stroke: 1px #003a6a;
+  text-stroke: 1px #003a6a;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reason__head h1 span {
+    -webkit-text-stroke: 2px #003a6a;
+    text-stroke: 2px #003a6a;
+  }
+}
+
+@media (min-width: 1025px) {
+  .reason__head h1 span {
+    -webkit-text-stroke: 3px #003a6a;
+    text-stroke: 3px #003a6a;
   }
 }
 /*# sourceMappingURL=style.css.map */

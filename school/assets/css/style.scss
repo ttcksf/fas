@@ -486,7 +486,7 @@ body {
   margin-top: 30px;
   text-align: center;
   &--top {
-    p {
+    p.active {
       color: $Rcolor;
       font-size: 18px;
       font-weight: 700;
@@ -523,19 +523,18 @@ body {
         -ms-transform: rotate(-60deg);
         transform: rotate(-60deg);
       }
-      &:nth-child(3) {
+      p{
         color: #333;
-        position: static;
       }
     }
   }
   &--bottom {
-    @include mq(md){
+    @include mq(md) {
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    @include mq(lg){
+    @include mq(lg) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -545,20 +544,20 @@ body {
       font-weight: 700;
       font-size: 20px;
       margin-top: 30px;
-      @include mq(md){
+      @include mq(md) {
         font-size: 28px;
       }
-      @include mq(lg){
+      @include mq(lg) {
         font-size: 40px;
       }
     }
     img {
       display: inline-block;
       padding-bottom: 30px;
-      @include mq(md){
+      @include mq(md) {
         width: 200px;
       }
-      @include mq(lg){
+      @include mq(lg) {
         width: 320px;
       }
     }
@@ -566,31 +565,180 @@ body {
 }
 
 //problem
-.problem{
-  
+.problem {
 }
-.problem__head{
-  h1{
+.problem__head {
+  h1 {
     font-size: 20px;
     font-weight: 700;
     text-align: center;
     margin: 30px 0;
-    @include mq(md){
+    @include mq(md) {
       font-size: 40px;
       margin: 50px 0;
     }
-    @include mq(lg){
+    @include mq(lg) {
       font-size: 60px;
       margin: 100px 0;
     }
   }
-  p{
+  p {
     font-size: 15px;
-    @include mq(md){
+    @include mq(md) {
       font-size: 18px;
     }
-    @include mq(lg){
+    @include mq(lg) {
       font-size: 20px;
+    }
+  }
+}
+.problem__example {
+  margin-top: 30px;
+  @include mq(md) {
+    border: 1px solid #333;
+    margin-top: 40px;
+  }
+  @include mq(lg) {
+    border: 1px solid #333;
+    margin-top: 50px;
+  }
+  h1 {
+    background: $BBcolor;
+    color: $Wcolor;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    margin-bottom: 10px;
+    @include mq(md) {
+      font-size: 24px;
+      padding: 2rem;
+      margin-bottom: 20px;
+    }
+    @include mq(lg) {
+      font-size: 34px;
+      padding: 4rem 2rem;
+      margin-bottom: 30px;
+    }
+  }
+  &--data {
+    text-align: center;
+    @include mq(lg) {
+      position: relative;
+    }
+    img {
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 18px;
+      color: $Rcolor;
+      font-weight: 700;
+      line-height: 1.2;
+      border: 1px solid $Rcolor;
+      padding: 1rem 2rem;
+
+      @include mq(md) {
+        font-size: 32px;
+      }
+      @include mq(lg) {
+        font-size: 54px;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        padding: 0 2rem 1rem;
+      }
+      span {
+        font-size: 15px;
+        @include mq(md) {
+          font-size: 24px;
+        }
+        @include mq(lg) {
+          font-size: 32px;
+        }
+      }
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 20px;
+      @include mq(md) {
+        font-size: 15px;
+      }
+      @include mq(lg) {
+        font-size: 18px;
+      }
+    }
+  }
+  &--Fn {
+    h2 {
+      background: $BBcolor;
+      font-weight: 700;
+      font-size: 18px;
+      color: $Wcolor;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      position: relative;
+      @include mq(md) {
+        font-size: 30px;
+        padding: 2rem;
+      }
+      @include mq(lg) {
+        font-size: 45px;
+        padding: 4rem 2rem;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 99%;
+        right: 50%;
+        transform: translateX(50%);
+        border-right: calc(50vw - 15px) solid transparent;
+        border-left: calc(50vw - 15px) solid transparent;
+        border-top: 20px solid $BBcolor;
+        @include mq(md) {
+          border-right: calc(50vw - 30px) solid transparent;
+          border-left: calc(50vw - 30px) solid transparent;
+          border-top: 40px solid $BBcolor;
+        }
+        @include mq(lg) {
+          border-right: calc(50vw - 270px) solid transparent;
+          border-left: calc(50vw - 270px) solid transparent;
+          border-top: 60px solid $BBcolor;
+        }
+      }
+    }
+    &-functions {
+      display: flex;
+      flex-wrap: wrap;
+      @include mq(lg){
+      background: $Gcolor;
+      }
+    }
+    &-function {
+      width: calc(50% - 15px * 1 / 2);
+      margin-right: 15px;
+      margin-top: 15px;
+      background: $Gcolor;
+      &:nth-child(2n){
+        margin-right: 0;
+      }
+      &:nth-child(1),
+      &:nth-child(2){
+        margin-top: 50px;
+      }
+      @include mq(lg){
+        background: transparent;
+        width: calc(25% - 30px * 3 / 4);
+        margin-right: 30px;
+        border-left: 1px solid $Wcolor;
+        &:last-child{
+        border-right: 1px solid $Wcolor;
+          margin-right: 0;
+        }
+      }
+      img {
+      }
+      p {
+      }
     }
   }
 }

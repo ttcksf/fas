@@ -40,7 +40,6 @@ body {
 @media (min-width: 1025px) {
   .contentInner {
     max-width: 1200px;
-    padding: 0 150px;
   }
 }
 
@@ -1028,12 +1027,28 @@ body {
   background-color: rgba(69, 230, 222, 0.2);
   background-image: linear-gradient(#fff 50%, transparent 50%, transparent 100%);
   background-size: 8px 8px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reason {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .reason {
+    padding-bottom: 50px;
+  }
 }
 
 .reason__head {
   border: 1px solid #333;
   background: #fff;
-  padding: 2rem 1rem 1rem;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 10%;
   position: relative;
   margin: 0 15px;
 }
@@ -1041,6 +1056,7 @@ body {
 @media (min-width: 1025px) {
   .reason__head {
     margin: 0 150px;
+    padding-bottom: 5%;
   }
 }
 
@@ -1150,50 +1166,153 @@ body {
 
 .reason__arrow {
   position: relative;
+  height: 60px;
 }
 
-.reason__arrow:before, .reason__arrow:after {
+.reason__arrow img {
+  display: inline-block;
+  width: 30%;
+  max-width: 150px;
   position: absolute;
-  content: "";
-  display: block;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.reason__arrow:before {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 80px;
-  background: #003a6a;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reason__arrow img {
+    max-width: 200px;
+  }
 }
 
-.reason__arrow:after {
-  top: 80%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-top: 70px solid;
-  border-right: 80px solid;
-  border-left: 80px solid;
-  border-bottom: 100px solid;
-  border-color: #003a6a transparent transparent transparent;
+@media (min-width: 1025px) {
+  .reason__arrow img {
+    max-width: 200px;
+  }
 }
 
 .reason__arrow p {
   color: #fff;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
   z-index: 2;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reason__arrow p {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .reason__arrow p {
+    font-size: 30px;
+  }
+}
+
 .reason__risk {
-  background: red;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.reason__risk--lists {
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reason__risk--lists {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1025px) {
+  .reason__risk--lists {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+}
+
+.reason__risk--list {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background: #003a6a;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reason__risk--list {
+    font-size: 18px;
+    width: calc(50% - 20px * 1 / 2);
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  .reason__risk--list:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .reason__risk--list {
+    font-size: 26px;
+    width: calc(50% - 30px * 1 / 2);
+    margin-right: 30px;
+    border-radius: 15px;
+  }
+  .reason__risk--list:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.reason__fact {
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reason__fact {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .reason__fact {
+    margin-top: 40px;
+  }
+}
+
+.reason__fact h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.reason__fact p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reason__fact p {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .reason__fact p {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

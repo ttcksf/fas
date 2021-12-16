@@ -83,6 +83,14 @@ body {
   text-decoration: underline wavy #45e6de;
 }
 
+.Odot {
+  padding-top: 0.5em;
+  background-position: top left -2px;
+  background-repeat: repeat-x;
+  background-size: 1.3em 0.3em;
+  background-image: radial-gradient(0.15em 0.15em at center center, tomato, tomato 100%, transparent);
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .mainVisual {
     position: relative;
@@ -1570,7 +1578,7 @@ body {
 }
 
 .learn__head .learn__head--h1 h1:before {
-  content: '';
+  content: "";
   position: absolute;
   background: url("../img/learn.png");
   background-size: contain;
@@ -1643,6 +1651,146 @@ body {
 @media (min-width: 1025px) {
   .learn__head p span img {
     top: 40%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn__lists {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn__list {
+    width: calc(50% - 20px * 1 / 2);
+    margin-right: 20px;
+  }
+  .learn__list:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.learn__list p {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 2rem 1rem 50px;
+  background: #fff;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .learn__list p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn__list p {
+    font-size: 24px;
+  }
+}
+
+.learn__list p:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(45deg, transparent 50%, rgba(255, 99, 71, 0.5) 30%, tomato 70%);
+  transform: rotate(-90deg);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .learn__list p:before {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn__list p:before {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.learn__fact {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .learn__fact {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn__fact {
+    margin-top: 40px;
+  }
+}
+
+.learn__fact p {
+  font-size: 18px;
+  font-weight: 700;
+  color: tomato;
+  position: relative;
+  display: inline-block;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .learn__fact p {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn__fact p {
+    font-size: 34px;
+  }
+}
+
+.learn__fact p:before, .learn__fact p:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  background: tomato;
+  width: 30px;
+  height: 2px;
+}
+
+.learn__fact p::before {
+  transform: rotate(60deg);
+  left: -50px;
+}
+
+.learn__fact p:after {
+  right: -50px;
+  transform: rotate(-60deg);
+}
+
+.learn__fact h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .learn__fact h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn__fact h2 {
+    font-size: 45px;
   }
 }
 /*# sourceMappingURL=style.css.map */

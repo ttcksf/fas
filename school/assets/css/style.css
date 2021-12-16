@@ -1506,4 +1506,143 @@ body {
     border-bottom: 60px solid #ff5053;
   }
 }
+
+.learn {
+  margin-top: 30px;
+  z-index: 0;
+  overflow: hidden;
+  background: #e4e2e2;
+  position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .learn {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn {
+    margin-top: 100px;
+  }
+}
+
+.learn:before {
+  background: url("../img/bg-learn.jpg") no-repeat center center/cover;
+  content: "";
+  opacity: 0.5;
+  filter: blur(10px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.learn__head .learn__head--h1 {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .learn__head .learn__head--h1 {
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn__head .learn__head--h1 {
+    margin: 30px 0;
+  }
+}
+
+.learn__head .learn__head--h1 h1 {
+  color: tomato;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+}
+
+.learn__head .learn__head--h1 h1:before {
+  content: '';
+  position: absolute;
+  background: url("../img/learn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  bottom: 0;
+  right: -20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .learn__head .learn__head--h1 h1:before {
+    width: 40px;
+    height: 40px;
+    right: -40px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn__head .learn__head--h1 h1:before {
+    width: 60px;
+    height: 60px;
+    right: -60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .learn__head .learn__head--h1 h1 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn__head .learn__head--h1 h1 {
+    font-size: 48px;
+  }
+}
+
+.learn__head p {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .learn__head p {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .learn__head p {
+    font-size: 45px;
+  }
+}
+
+.learn__head p span {
+  position: relative;
+  z-index: 0;
+}
+
+.learn__head p span img {
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 1025px) {
+  .learn__head p span img {
+    top: 40%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

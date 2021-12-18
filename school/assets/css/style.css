@@ -2070,7 +2070,6 @@ body {
 .point1__bottom--voice {
   width: 100%;
   text-align: center;
-  margin-bottom: 100px;
   background: #efefef;
   padding: 2rem 1rem;
   min-height: 200px;
@@ -2139,6 +2138,110 @@ body {
   .point1__bottom--voice p {
     font-size: 20px;
     margin-top: 20px;
+  }
+}
+
+.point2 {
+  background: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point2 {
+    margin-top: 50px;
+    padding: 50px 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point2 {
+    margin-top: 100px;
+    padding: 80px 50px;
+  }
+}
+
+.point2__head {
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point2__head--text div {
+    display: flex;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point2__head--text div {
+    display: flex;
+    padding: 1rem 2rem;
+  }
+}
+
+.point2__head--text div img {
+  display: inline-block;
+  width: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point2__head--text div img {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point2__head--text div img {
+    width: 200px;
+  }
+}
+
+.point2__head--text div h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point2__head--text div h2 {
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point2__head--text div h2 {
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+.point2__head--text div h2 span {
+  color: #ff5053;
+}
+
+.point2__head--text p {
+  line-height: 1.2;
+  font-size: 15px;
+  text-align: left;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point2__head--text p {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point2__head--text p {
+    font-size: 20px;
+    line-height: 1.7;
   }
 }
 /*# sourceMappingURL=style.css.map */

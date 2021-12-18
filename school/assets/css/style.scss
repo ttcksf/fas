@@ -1386,3 +1386,125 @@ body {
     }
   }
 }
+
+//point
+.point {
+  background: $Pcolor;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include mq(md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include mq(lg) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.point__inner {
+  text-align: center;
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      background: url(../img/learn-sub.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      bottom: 0;
+      right: -20px;
+      @include mq(md) {
+        width: 40px;
+        height: 40px;
+        right: -40px;
+      }
+      @include mq(lg) {
+        width: 60px;
+        height: 60px;
+        right: -60px;
+      }
+    }
+    @include mq(md) {
+      font-size: 40px;
+    }
+    @include mq(lg) {
+      font-size: 60px;
+    }
+  }
+}
+.point1{
+  background: $Wcolor;
+  padding: 2rem 1rem;
+  margin-top: 30px;
+  @include mq(md){
+    margin-top: 50px;
+  }
+  @include mq(lg){
+    margin-top: 100px;
+  }
+  &__head{
+    &--text{
+      img{
+        display: inline-block;
+        width: 100px;
+      }
+      h2{
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        @include mq(md){
+          font-size: 32px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        @include mq(lg){
+          font-size: 45px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        span{
+          color: $Rcolor;
+        }
+      }
+      p{
+        line-height: 1.2;
+        font-size: 15px;
+        text-align: left;
+        @include mq(md){
+          font-size: 18px;
+        }
+        @include mq(lg){
+          font-size: 20px;
+        }
+      }
+    }
+    &--img{
+      margin-top: 10px;
+      @include mq(md){
+        margin-top: 20px;
+      }
+      @include mq(lg){
+        margin-top: 30px;
+      }
+      img{
+        width: 80%;
+        margin: 0 auto;
+        @include mq(md){
+          
+        }
+      }
+    }
+  }
+}

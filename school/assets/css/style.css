@@ -1946,6 +1946,8 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
+    text-align: left;
+    padding-left: 20px;
   }
 }
 
@@ -1955,6 +1957,8 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
+    text-align: left;
+    padding-left: 30px;
   }
 }
 
@@ -2222,6 +2226,8 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
+    text-align: left;
+    padding-left: 20px;
   }
 }
 
@@ -2231,6 +2237,8 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
+    text-align: left;
+    padding-left: 30px;
   }
 }
 
@@ -3160,6 +3168,226 @@ body {
   .point3__bottom--voice p {
     font-size: 20px;
     margin-top: 20px;
+  }
+}
+
+.point4 {
+  background: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point4 {
+    margin-top: 50px;
+    padding: 50px 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4 {
+    margin-top: 100px;
+    padding: 80px 50px;
+  }
+}
+
+.point4__head {
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point4__head--text div {
+    display: flex;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4__head--text div {
+    display: flex;
+    padding: 1rem 2rem;
+  }
+}
+
+.point4__head--text div img {
+  display: inline-block;
+  width: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point4__head--text div img {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4__head--text div img {
+    width: 200px;
+  }
+}
+
+.point4__head--text div h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point4__head--text div h2 {
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4__head--text div h2 {
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+  }
+}
+
+.point4__head--text div h2 span {
+  color: #ff5053;
+}
+
+.point4__head--text p {
+  line-height: 1.2;
+  font-size: 15px;
+  text-align: left;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point4__head--text p {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4__head--text p {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+}
+
+.point4__head--methods {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point4__head--methods {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4__head--methods {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.point4__head--method {
+  background: rgba(255, 80, 83, 0.2);
+  border: 2px solid #ff5053;
+  padding: 2rem 3rem;
+}
+
+.point4__head--method:first-child, .point4__head--method:nth-child(2) {
+  border-bottom: none;
+}
+
+@media (min-width: 1025px) {
+  .point4__head--method:first-child, .point4__head--method:nth-child(2) {
+    border-bottom: 2px solid #ff5053;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4__head--method {
+    width: calc(33% - 20px * 2 / 3);
+    position: relative;
+    padding-top: calc(33% - 20px * 2 / 3);
+    height: 0;
+    margin-right: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .point4__head--method:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4__head--method-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    padding: auto 0;
+    padding: 0 30px;
+  }
+}
+
+.point4__head--method-inner p {
+  margin-top: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point4__head--method-inner p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4__head--method-inner p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.point4__head--method-inner p span {
+  color: #ff5053;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point4__head--method-inner p span {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4__head--method-inner p span {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4__head--method-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 140px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

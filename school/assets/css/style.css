@@ -200,7 +200,7 @@ body {
 }
 
 .mainVisual__bottom--text {
-  background: linear-gradient(to right, rgba(224, 96, 96, 0.5), rgba(224, 128, 128, 0.5) 30%, rgba(224, 160, 160, 0.5));
+  background: linear-gradient(to right, rgba(224, 96, 96, 0.7), rgba(224, 96, 96, 0.5) 70%, rgba(224, 96, 96, 0.3));
   color: #fff;
   padding: 1rem;
 }
@@ -232,7 +232,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to right, rgba(224, 96, 96, 0.5), rgba(224, 128, 128, 0.5) 30%, rgba(224, 160, 160, 0.5));
+  background: linear-gradient(to right, #e06060, rgba(224, 96, 96, 0.8) 70%, rgba(224, 96, 96, 0.3));
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -472,7 +472,7 @@ body {
 
 @media (min-width: 1025px) {
   .question .question__description p {
-    font-size: 34px;
+    font-size: 28px;
   }
 }
 
@@ -488,7 +488,7 @@ body {
 
 @media (min-width: 1025px) {
   .question .question__description p:nth-child(2) {
-    font-size: 45px;
+    font-size: 37px;
   }
 }
 
@@ -546,13 +546,15 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .merit__lists--inner {
-    width: 90%;
+    width: 675px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1025px) {
   .merit__lists--inner {
-    width: 70%;
+    width: 810px;
+    margin: 0 auto;
   }
 }
 
@@ -606,7 +608,7 @@ body {
 
 @media (min-width: 1025px) {
   .merit__list--text {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -656,8 +658,25 @@ body {
   transform: rotate(-60deg);
 }
 
-.merit__description--top p.active p {
+.merit__description--top p {
   color: #333;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: left;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .merit__description--top p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .merit__description--top p {
+    font-size: 26px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1318,6 +1337,8 @@ body {
 .reason__fact p {
   font-size: 15px;
   margin-top: 10px;
+  background: #fff;
+  padding: 1rem;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1431,7 +1452,6 @@ body {
 .strong__list--img-mask h2 {
   padding: 1rem;
   width: 100%;
-  height: 80px;
   display: inline-block;
   vertical-align: bottom;
   background: rgba(255, 99, 71, 0.8);
@@ -1442,15 +1462,29 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .strong__list--img-mask h2.mask-active {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .strong__list--img-mask h2.mask-active {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .strong__list--img-mask h2 {
     height: 120px;
+    padding: 7% 1rem 1rem 1rem;
   }
 }
 
 @media (min-width: 1025px) {
   .strong__list--img-mask h2 {
-    font-size: 26px;
+    font-size: 24px;
     height: 160px;
+    padding: 7% 1rem 1rem 1rem;
   }
 }
 
@@ -1546,7 +1580,7 @@ body {
 .learn:before {
   background: url("../img/bg-learn.jpg") no-repeat center center/cover;
   content: "";
-  opacity: 0.5;
+  opacity: 0.3;
   filter: blur(10px);
   position: absolute;
   top: 0;

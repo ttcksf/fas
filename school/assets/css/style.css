@@ -3578,6 +3578,7 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
   .point5__head--text div {
     display: flex;
+    align-items: start;
     padding: 1rem;
   }
 }
@@ -3585,6 +3586,7 @@ body {
 @media (min-width: 1025px) {
   .point5__head--text div {
     display: flex;
+    align-items: start;
     padding: 1rem 2rem;
   }
 }
@@ -3620,7 +3622,7 @@ body {
     font-size: 32px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
+    flex: 1;
     text-align: left;
     padding-left: 20px;
   }
@@ -3631,7 +3633,7 @@ body {
     font-size: 45px;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 100%;
+    flex: 1;
     text-align: left;
     padding-left: 30px;
   }
@@ -3658,6 +3660,51 @@ body {
   .point5__head--text p {
     font-size: 20px;
     line-height: 1.7;
+  }
+}
+
+.point5__head--img {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point5__head--img {
+    margin: 20px auto 0;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point5__head--img {
+    margin: 30px auto 0;
+    width: 80%;
+  }
+}
+
+.point5__head--img img {
+  display: inline-block;
+  width: calc(50% - 10px * 1 / 2);
+  margin-right: 10px;
+}
+
+.point5__head--img img:nth-child(2) {
+  margin-right: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .point5__head--img img {
+    width: calc(50% - 20px * 1 / 2);
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point5__head--img img {
+    width: calc(50% - 30px * 1 / 2);
+    margin-right: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

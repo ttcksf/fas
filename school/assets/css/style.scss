@@ -2713,10 +2713,12 @@ body {
       div {
         @include mq(md) {
           display: flex;
+          align-items: start;
           padding: 1rem;
         }
         @include mq(lg) {
           display: flex;
+          align-items: start;
           padding: 1rem 2rem;
         }
         img {
@@ -2740,7 +2742,7 @@ body {
             font-size: 32px;
             margin-top: 20px;
             margin-bottom: 20px;
-            width: 100%;
+            flex: 1;
             text-align: left;
             padding-left: 20px;
           }
@@ -2748,7 +2750,7 @@ body {
             font-size: 45px;
             margin-top: 30px;
             margin-bottom: 30px;
-            width: 100%;
+            flex: 1;
             text-align: left;
             padding-left: 30px;
           }
@@ -2771,7 +2773,36 @@ body {
         }
       }
     }
-    
+    &--img{
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      @include mq(md){
+        margin: 20px auto 0;
+        width: 80%;
+      }
+      @include mq(lg){
+        margin: 30px auto 0;
+        width: 80%;
+      }
+      img{
+        display: inline-block;
+        width: calc(50% - 10px * 1 / 2);
+        margin-right: 10px;
+        &:nth-child(2){
+          margin-right: 0;
+        }
+        @include mq(md){
+          width: calc(50% - 20px * 1 / 2);
+          margin-right: 20px;
+        }
+        @include mq(lg){
+          width: calc(50% - 30px * 1 / 2);
+          margin-right: 30px;
+        }
+      }
+    }
     
   }
 }

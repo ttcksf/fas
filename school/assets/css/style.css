@@ -3555,6 +3555,7 @@ body {
 
 .point5 {
   background: #fff;
+  padding-bottom: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -3857,6 +3858,135 @@ body {
   .point5__bottom--voice p {
     font-size: 20px;
     margin-top: 20px;
+  }
+}
+
+.intro {
+  z-index: 0;
+  overflow: hidden;
+  background: #e4e2e2;
+  position: relative;
+}
+
+.intro:before {
+  background: url("../img/intro-bg.jpg") no-repeat center center/cover;
+  content: "";
+  opacity: 0.3;
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.intro__inner {
+  padding-bottom: 20px;
+}
+
+.intro__inner h1 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro__inner h1 {
+    margin: 50px 0;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .intro__inner h1 {
+    margin: 100px 0;
+    font-size: 60px;
+  }
+}
+
+.intro__lists {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro__lists {
+    padding: 2rem 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .intro__lists {
+    padding: 2rem 0;
+  }
+}
+
+.intro__list:nth-child(2) {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro__list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .intro__list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.intro__list--title {
+  text-align: center;
+  color: #ff5053;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro__list--title {
+    text-align: left;
+    font-size: 24px;
+    width: 30%;
+    margin: 0 0 0 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .intro__list--title {
+    text-align: left;
+    font-size: 34px;
+    width: 30%;
+    max-width: 225px;
+    margin: 0 0 0 100px;
+  }
+}
+
+.intro__list--text {
+  font-size: 15px;
+  text-align: left;
+  margin: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro__list--text {
+    font-size: 18px;
+    flex: 1;
+    margin: 2rem 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .intro__list--text {
+    font-size: 20px;
+    margin: 4rem 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

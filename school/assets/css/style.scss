@@ -3035,6 +3035,9 @@ body {
   background-size: 7px 7px;
   position: relative;
   padding: 50px 15px;
+  @include mq(lg){
+    padding: 100px 60px;
+  }
 
   h1 {
     font-size: 20px;
@@ -3168,8 +3171,10 @@ body {
     }
     @include mq(lg){
       height: 70px;
-      font-size: 26px;
-      padding: 15px;
+      font-size: 22px;
+      white-space: nowrap;
+      padding: 18px 7px;
+      text-align: center;
     }
     &:before,
     &:after {
@@ -3237,6 +3242,251 @@ body {
     }
     span {
       font-weight: 700;
+    }
+  }
+}
+.study__24{
+  margin-top: 10px;
+  @include mq(md){
+    margin-top: 20px;
+  }
+  @include mq(lg){
+    margin-top: 30px;
+  }
+  h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: $Wcolor;
+    text-align: center;
+    position: relative;
+    background: $MBcolor;
+    border: 2px solid $MBcolor;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      width: 35px;
+      height: 2px;
+      background: $Wcolor;
+      -webkit-transform: rotate(-60deg);
+      transform: rotate(-60deg);
+      @include mq(md) {
+        width: 50px;
+      }
+      @include mq(lg) {
+        width: 71px;
+      }
+    }
+    &:before {
+      left: -9px;
+      @include mq(md) {
+        left: -14px;
+      }
+      @include mq(lg) {
+        left: -21px;
+      }
+    }
+    &:after {
+      right: -8px;
+      @include mq(md) {
+        right: -12px;
+      }
+      @include mq(lg) {
+        right: -18px;
+      }
+    }
+    @include mq(md) {
+      font-size: 24px;
+    }
+    @include mq(lg) {
+      font-size: 34px;
+    }
+  }
+  p{
+    &.h2__tr{
+      width: 50%;
+      height: 20px;
+      border-right: 2px solid $MBcolor;
+      @include mq(md) {
+        height: 30px;
+        border-right: 3px solid $MBcolor;
+      }
+      @include mq(lg) {
+        height: 40px;
+        border-right: 4px solid $MBcolor;
+      }
+    }
+    &.study__24--text{
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      @include mq(md) {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      @include mq(lg) {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+    &.study__24--twelve{
+      color: $MBcolor;
+      font-weight: 700;
+      font-size: 16px;
+      text-align: center;
+      background: $Wcolor;
+      border: 2px solid $MBcolor;
+      border-radius: 10px;
+      margin: 0 auto;
+      width: 70%;
+      @include mq(md){
+        font-size: 20px;
+        width: 30%;
+        border-radius: 30px;
+      }
+      @include mq(lg){
+        font-size: 26px;
+        width: 30%;
+        border-radius: 40px;
+      }
+    }
+    &.study__24--plus{
+      color: $MBcolor;
+      font-weight: 900;
+      font-size: 36px;
+      text-align: center;
+      @include mq(md){
+        font-size: 48px;
+      }
+      @include mq(lg){
+        font-size: 56px;
+      }
+    }
+  }
+}
+.study__24--skills{
+  @include mq(md){
+    display: flex;
+    justify-content: space-between;
+  }
+  @include mq(lg){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.study__24--skill{
+  margin-top: 50px;
+  background: $Wcolor;
+  @include mq(md){
+    width: calc(50% - 10px * 1 / 2);
+    margin-right: 10px;
+    &:nth-child(2){
+      margin-right: 0;
+    }
+  }
+  @include mq(lg){
+    width: calc(50% - 30px * 2 / 3);
+    margin-right: 30px;
+    &:nth-child(2){
+      margin-right: 0;
+    }
+  }
+  h3 {
+    position: relative;
+    padding: 5px;
+    text-align: center;
+    background: $MBcolor;
+    color: $Wcolor;
+    font-weight: 700;
+    height: 40px;
+    font-size: 16px;
+    @include mq(md){
+      height: 50px;
+      font-size: 20px;
+      padding: 10px;
+    }
+    @include mq(lg){
+      height: 70px;
+      font-size: 23px;
+      padding: 15px;
+    }
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+    }
+    &:before {
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: $MBcolor;
+      @include mq(md){
+        width: 70px;
+        height: 70px;
+      }
+      @include mq(lg){
+        width: 80px;
+        height: 80px;
+      }
+    }
+    &:after {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $MBcolor;
+    }
+    img {
+      position: absolute;
+      z-index: 1;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      @include mq(md){
+        width: 25px;
+        height: 25px;
+        left: 50%;
+      }
+      @include mq(lg){
+        width: 30px;
+        height: 30px;
+      }
+    }
+    span {
+      position: relative;
+      z-index: 1;
+      white-space: nowrap;
+      font-size: 14.5px;
+      letter-spacing: 0.01;
+      @include mq(md){
+        font-size: 18px;
+      }
+      @include mq(lg){
+        font-size: 23px;
+      }
+    }
+  }
+  p {
+    font-size: 15px;
+    padding: 10px;
+    @include mq(md){
+      font-size: 18px;
+      padding: 20px;
+    }
+    @include mq(lg){
+      font-size: 20px;
+      padding: 30px;
     }
   }
 }

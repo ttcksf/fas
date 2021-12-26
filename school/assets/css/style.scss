@@ -1567,9 +1567,21 @@ body {
   &__bottom {
     &--title {
       text-align: center;
-      ackground-image: -moz-linear-gradient(to left, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
-  background-image: -webkit-linear-gradient(to left, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
-  background-image: linear-gradient(to right, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
+      ackground-image: -moz-linear-gradient(
+        to left,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
+      background-image: -webkit-linear-gradient(
+        to left,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
+      background-image: linear-gradient(
+        to right,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
       padding: 1rem;
       position: relative;
       margin: 0 1rem;
@@ -1589,7 +1601,7 @@ body {
         width: 0px;
         height: 0px;
         border-style: solid;
-        border-color: #ff5053 transparent transparent transparent;
+        border-color: rgba($Rcolor, 0.8) transparent transparent transparent;
         border-width: 20px 20px 0 20px;
       }
       h3 {
@@ -1868,9 +1880,21 @@ body {
   &__bottom {
     &--title {
       text-align: center;
-      ackground-image: -moz-linear-gradient(to left, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
-  background-image: -webkit-linear-gradient(to left, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
-  background-image: linear-gradient(to right, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
+      ackground-image: -moz-linear-gradient(
+        to left,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
+      background-image: -webkit-linear-gradient(
+        to left,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
+      background-image: linear-gradient(
+        to right,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
       padding: 1rem;
       position: relative;
       margin: 0 1rem;
@@ -1890,7 +1914,7 @@ body {
         width: 0px;
         height: 0px;
         border-style: solid;
-        border-color: #ff5053 transparent transparent transparent;
+        border-color: rgba($Rcolor, 0.8) transparent transparent transparent;
         border-width: 20px 20px 0 20px;
       }
       h3 {
@@ -2319,9 +2343,21 @@ body {
   &__bottom {
     &--title {
       text-align: center;
-      ackground-image: -moz-linear-gradient(to left, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
-  background-image: -webkit-linear-gradient(to left, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
-  background-image: linear-gradient(to right, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
+      ackground-image: -moz-linear-gradient(
+        to left,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
+      background-image: -webkit-linear-gradient(
+        to left,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
+      background-image: linear-gradient(
+        to right,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
       padding: 1rem;
       position: relative;
       margin: 0 1rem;
@@ -2341,7 +2377,7 @@ body {
         width: 0px;
         height: 0px;
         border-style: solid;
-        border-color: #ff5053 transparent transparent transparent;
+        border-color: rgba($Rcolor, 0.8) transparent transparent transparent;
         border-width: 20px 20px 0 20px;
       }
       h3 {
@@ -2593,9 +2629,21 @@ body {
   &__bottom {
     &--title {
       text-align: center;
-      background-image: -moz-linear-gradient(to left, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
-  background-image: -webkit-linear-gradient(to left, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
-  background-image: linear-gradient(to right, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
+      background-image: -moz-linear-gradient(
+        to left,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
+      background-image: -webkit-linear-gradient(
+        to left,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
+      background-image: linear-gradient(
+        to right,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
       padding: 1rem;
       position: relative;
       margin: 0 1rem;
@@ -2615,7 +2663,7 @@ body {
         width: 0px;
         height: 0px;
         border-style: solid;
-        border-color: #ff5053 transparent transparent transparent;
+        border-color: rgba($Rcolor, 0.8) transparent transparent transparent;
         border-width: 20px 20px 0 20px;
       }
       h3 {
@@ -2817,9 +2865,21 @@ body {
   &__bottom {
     &--title {
       text-align: center;
-      background-image: -moz-linear-gradient(to left, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
-  background-image: -webkit-linear-gradient(to left, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
-  background-image: linear-gradient(to right, rgba(#ff6633, 0.8) 0%,rgba($Rcolor, 0.8) 100%);
+      background-image: -moz-linear-gradient(
+        to left,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
+      background-image: -webkit-linear-gradient(
+        to left,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
+      background-image: linear-gradient(
+        to right,
+        rgba(#ff6633, 0.8) 0%,
+        rgba($Rcolor, 0.8) 100%
+      );
       padding: 1rem;
       position: relative;
       margin: 0 1rem;
@@ -2839,7 +2899,8 @@ body {
         width: 0px;
         height: 0px;
         border-style: solid;
-        border-color: #ff5053 transparent transparent transparent;
+        display: block;
+        border-color: rgba($Rcolor, 0.8) transparent transparent transparent;
         border-width: 20px 20px 0 20px;
       }
       h3 {
@@ -3248,7 +3309,7 @@ body {
     }
     @include mq(lg) {
       font-size: 20px;
-      padding: 30px;
+      padding: 20px;
     }
     span {
       font-weight: 700;
@@ -3673,6 +3734,7 @@ body {
       padding: 10px;
       text-align: center;
       margin-bottom: 80px;
+      font-weight: 700;
       &:after {
         position: absolute;
         top: 0;
@@ -3683,21 +3745,45 @@ body {
         border-width: 0 95px 95px 0;
         border-style: solid;
         border-color: transparent transparent rgba(224, 96, 96, 1) transparent;
+        @include mq(lg){
+          border-width: 0 110px 110px 0;
+          right: -109px
+        }
+      }
+      @include mq(md){
+        font-size: 24px;
+      }
+      @include mq(lg){
+        font-size: 24px;
+        height: 110px;
       }
     }
   }
 }
+//contact1
 .contact1 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-image: -moz-linear-gradient(to left, rgba($Rcolor, 0.8) 0%,rgba(#ff6633, 0.8) 100%);
-  background-image: -webkit-linear-gradient(to left, rgba($Rcolor, 0.8) 0%,rgba(#ff6633, 0.8) 100%);
-  background-image: linear-gradient(to right, rgba($Rcolor, 0.8) 0%,rgba(#ff6633, 0.8) 100%);
-  @include mq(md){
+  background-image: -moz-linear-gradient(
+    to left,
+    rgba($Rcolor, 0.8) 0%,
+    rgba(#ff6633, 0.8) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    to left,
+    rgba($Rcolor, 0.8) 0%,
+    rgba(#ff6633, 0.8) 100%
+  );
+  background-image: linear-gradient(
+    to right,
+    rgba($Rcolor, 0.8) 0%,
+    rgba(#ff6633, 0.8) 100%
+  );
+  @include mq(md) {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-  @include mq(lg){
+  @include mq(lg) {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -3705,10 +3791,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    @include mq(md){
+    @include mq(md) {
       display: block;
     }
-    @include mq(lg){
+    @include mq(lg) {
       display: block;
     }
     h1 {
@@ -3717,13 +3803,13 @@ body {
       font-size: 18px;
       line-height: 1.5;
       width: 170px;
-      @include mq(md){
+      @include mq(md) {
         width: 100%;
         text-align: center;
         font-size: 32px;
         margin: 20px 0;
       }
-      @include mq(lg){
+      @include mq(lg) {
         font-size: 45px;
         margin: 30px 0;
         text-align: center;
@@ -3734,14 +3820,14 @@ body {
       width: 40%;
       max-width: 150px;
     }
-    &--inner{
-      @include mq(md){
+    &--inner {
+      @include mq(md) {
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
         margin: 20px 0;
       }
-      @include mq(lg){
+      @include mq(lg) {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -3751,34 +3837,32 @@ body {
       .contact1__text {
         color: $Wcolor;
         font-size: 15px;
-        @include mq(md){
+        @include mq(md) {
           flex: 1;
           font-size: 18px;
         }
-        @include mq(lg){
+        @include mq(lg) {
           flex: 1;
           font-size: 20px;
         }
       }
-      img{
-        @include mq(md){
+      img {
+        @include mq(md) {
           width: 270px;
-          
         }
-        @include mq(lg){
+        @include mq(lg) {
           width: 300px;
-          
         }
       }
     }
   }
-  &__contact{
-    @include mq(md){
+  &__contact {
+    @include mq(md) {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    @include mq(lg){
+    @include mq(lg) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -3792,11 +3876,11 @@ body {
       padding: 1rem;
       margin: 10px 0;
       text-align: center;
-      @include mq(md){
+      @include mq(md) {
         width: 45%;
         margin-right: 20px;
       }
-      @include mq(lg){
+      @include mq(lg) {
         width: 45%;
         margin-right: 40px;
       }
@@ -3805,76 +3889,75 @@ body {
         font-weight: 700;
         font-size: 18px;
         position: relative;
-        @include mq(md){
+        @include mq(md) {
           font-size: 22px;
         }
-        @include mq(lg){
+        @include mq(lg) {
           font-size: 32px;
         }
         img {
           margin-right: 1rem;
           display: inline-block;
           vertical-align: middle;
-          @include mq(md){
+          @include mq(md) {
             width: 40px;
           }
-          @include mq(lg){
+          @include mq(lg) {
             width: 40px;
-            
           }
         }
       }
     }
-    &--tel{
-      @include mq(md){
+    &--tel {
+      @include mq(md) {
         flex: 1;
       }
-      @include mq(lg){
+      @include mq(lg) {
         flex: 1;
       }
-      p{
+      p {
         color: $Wcolor;
         font-size: 15px;
         text-align: center;
-        @include mq(md){
+        @include mq(md) {
           font-size: 18px;
         }
-        @include mq(lg){
+        @include mq(lg) {
           font-size: 20px;
         }
       }
-      .contact1__tel--img{
+      .contact1__tel--img {
         display: flex;
-        align-items:flex-end;
+        align-items: flex-end;
         width: 80%;
         margin: 0 auto;
-        
-        &-pc{
+
+        &-pc {
           width: 100%;
           display: inline-block;
           text-align: center;
           margin: 0 auto;
-          @include mq(md){
+          @include mq(md) {
             display: flex;
             align-items: center;
             justify-content: center;
             border-bottom: 1px solid $Wcolor;
           }
-          @include mq(lg){
+          @include mq(lg) {
             display: flex;
             align-items: center;
             justify-content: center;
             border-bottom: 1px solid $Wcolor;
           }
-          img{
-            @include mq(md){
+          img {
+            @include mq(md) {
               width: 40px;
             }
-            @include mq(lg){
+            @include mq(lg) {
               width: 50px;
             }
           }
-          a{
+          a {
             font-style: italic;
             flex: 1;
             width: 100%;
@@ -3884,13 +3967,13 @@ body {
             letter-spacing: 0.01;
             border-bottom: 1px solid $Wcolor;
             font-weight: 700;
-            @include mq(md){
+            @include mq(md) {
               font-size: 36px;
               border-bottom: none;
               flex: 1;
               max-width: 260px;
             }
-            @include mq(lg){
+            @include mq(lg) {
               font-size: 45px;
               border-bottom: none;
               flex: 1;
@@ -3898,76 +3981,304 @@ body {
             }
           }
         }
-        
       }
     }
-  } 
+  }
 }
 
 //faq
-.faq{
+.faq {
   padding-top: 30px;
-  @include mq(md){
+  @include mq(md) {
     padding-top: 50px;
     padding-left: 30px;
-    padding-right: 30px; 
+    padding-right: 30px;
   }
-  @include mq(lg){
+  @include mq(lg) {
     padding-top: 80px;
     padding-left: 60px;
     padding-right: 60px;
   }
-  &__head{
+  &__head {
     text-align: center;
-    img{
+    img {
       max-width: 70px;
-      @include mq(md){
+      @include mq(md) {
         max-width: 90px;
       }
-      @include mq(lg){
+      @include mq(lg) {
         max-width: 110px;
       }
     }
-    h1{
+    h1 {
       font-size: 20px;
       font-weight: 700;
 
-      @include mq(md){
+      @include mq(md) {
         font-size: 32px;
       }
-      @include mq(lg){
+      @include mq(lg) {
         font-size: 45px;
       }
     }
   }
-  &__lists{
+  &__lists {
     padding: 30px 0 30px 15px;
-    @include mq(md){
-      padding: 50px 0  50px 30px;
+    @include mq(md) {
+      padding: 50px 0 50px 30px;
     }
-    @include mq(lg){
+    @include mq(lg) {
       padding: 100px 0 100px 150px;
     }
   }
-  &__list{
+  &__list {
     margin-bottom: 10px;
     font-size: 15px;
-    @include mq(md){
+    @include mq(md) {
       font-size: 18px;
     }
-    @include mq(lg){
+    @include mq(lg) {
       font-size: 26px;
     }
-    &--q{
+    &--q {
       color: $MBcolor;
       font-size: 15px;
       font-weight: 700;
       text-indent: -1rem;
       margin-bottom: 10px;
     }
-    &--a{
+    &--a {
       font-size: 15px;
       text-indent: -1rem;
+    }
+  }
+}
+//contact2
+.contact2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-image: -moz-linear-gradient(
+    to left,
+    rgba($Rcolor, 0.8) 0%,
+    rgba(#ff6633, 0.8) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    to left,
+    rgba($Rcolor, 0.8) 0%,
+    rgba(#ff6633, 0.8) 100%
+  );
+  background-image: linear-gradient(
+    to right,
+    rgba($Rcolor, 0.8) 0%,
+    rgba(#ff6633, 0.8) 100%
+  );
+  @include mq(md) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  @include mq(lg) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  &__head {
+    @include mq(md) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @include mq(lg) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    h1 {
+      color: $Wcolor;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.5;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid $Wcolor;
+      position: relative;
+      padding-bottom: 10px;
+      margin: 30px 0;
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-color: $Wcolor transparent transparent transparent;
+        border-width: 20px 20px 0 20px;
+      }
+      @include mq(md) {
+        font-size: 32px;
+        margin: 50px 0;
+      }
+      @include mq(lg) {
+        font-size: 36px;
+        margin: 50px 0;
+      }
+    }
+    img {
+      width: 40px;
+      position: absolute;
+      top: 23px;
+      right: 20px;
+    }
+    &--inner {
+      @include mq(md) {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 20px 0;
+      }
+      @include mq(lg) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .contact2__text {
+        color: $Wcolor;
+        font-size: 15px;
+        @include mq(md) {
+          flex: 1;
+        }
+        @include mq(lg) {
+          flex: 1;
+        }
+      }
+      img {
+        @include mq(md) {
+          width: 270px;
+        }
+        @include mq(lg) {
+          width: 300px;
+        }
+      }
+    }
+  }
+  &__contact {
+    @include mq(md) {
+    }
+    @include mq(lg) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    &--mail {
+      background: $Rcolor;
+      border: 3px solid $Wcolor;
+      padding: 1rem;
+      margin: 10px 0;
+      text-align: center;
+      @include mq(md) {
+        width: 45%;
+        margin: 0 auto;
+      }
+      @include mq(lg) {
+        width: 45%;
+        margin: 0 auto;
+      }
+      a {
+        color: $Wcolor;
+        font-weight: 700;
+        font-size: 18px;
+        position: relative;
+        @include mq(md) {
+          font-size: 22px;
+        }
+        @include mq(lg) {
+          font-size: 32px;
+        }
+        img {
+          margin-right: 1rem;
+          display: inline-block;
+          vertical-align: middle;
+          @include mq(md) {
+            width: 40px;
+          }
+          @include mq(lg) {
+            width: 40px;
+          }
+        }
+      }
+    }
+    &--tel {
+      @include mq(md) {
+        width: 60%;
+        margin: 30px auto;
+      }
+      @include mq(lg) {
+        width: 60%;
+        margin: 50px auto;
+      }
+      p {
+        color: $Wcolor;
+        font-size: 15px;
+        text-align: center;
+      }
+      .contact2__tel--img {
+        display: flex;
+        align-items: flex-end;
+        width: 80%;
+        margin: 0 auto;
+
+        &-pc {
+          width: 100%;
+          display: inline-block;
+          text-align: center;
+          margin: 0 auto;
+          @include mq(md) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid $Wcolor;
+          }
+          @include mq(lg) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid $Wcolor;
+          }
+          img {
+            @include mq(md) {
+              width: 40px;
+            }
+            @include mq(lg) {
+              width: 50px;
+            }
+          }
+          a {
+            font-style: italic;
+            flex: 1;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            color: $Wcolor;
+            letter-spacing: 0.01;
+            border-bottom: 1px solid $Wcolor;
+            font-weight: 700;
+            @include mq(md) {
+              font-size: 36px;
+              border-bottom: none;
+              flex: 1;
+              max-width: 260px;
+            }
+            @include mq(lg) {
+              font-size: 45px;
+              border-bottom: none;
+              flex: 1;
+              max-width: 340px;
+            }
+          }
+        }
+      }
     }
   }
 }

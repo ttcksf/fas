@@ -4982,6 +4982,20 @@ body {
   width: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .schedule__flow img {
+    padding: 0 30px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .schedule__flow img {
+    margin-top: 0;
+    padding: 0 150px;
+  }
+}
+
 .schedule__flow small {
   padding: 0 15px;
   text-align: right;
@@ -5046,7 +5060,102 @@ body {
   margin-top: 20px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .schedule__table h2 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .schedule__table h2 {
+    font-size: 34px;
+  }
+}
+
 .schedule__table img {
+  padding: 0 15px;
+  margin-top: 10px;
   width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .schedule__table img {
+    padding: 0 30px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .schedule__table img {
+    margin-top: 0;
+    padding: 0 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .schedule__table--inner {
+    padding: 0 30px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .schedule__table--inner {
+    margin-top: 0;
+    padding: 0 150px;
+  }
+}
+
+.schedule__table--text {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(224, 96, 96, 0.5)), color-stop(40%, rgba(224, 96, 96, 0.8)), to(#e06060));
+  background: linear-gradient(to right, rgba(224, 96, 96, 0.5), rgba(224, 96, 96, 0.8) 40%, #e06060);
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  padding: 20px 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .schedule__table--text {
+    position: relative;
+    width: calc(100% - 95px);
+    height: 95px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+  }
+  .schedule__table--text:after {
+    position: absolute;
+    top: 0;
+    right: -94px;
+    width: 0;
+    height: 0;
+    content: "";
+    border-width: 0 95px 95px 0;
+    border-style: solid;
+    border-color: transparent transparent #e06060 transparent;
+  }
+}
+
+@media (min-width: 1025px) {
+  .schedule__table--text {
+    position: relative;
+    width: calc(100% - 95px);
+    height: 95px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  .schedule__table--text:after {
+    position: absolute;
+    top: 0;
+    right: -94px;
+    width: 0;
+    height: 0;
+    content: "";
+    border-width: 0 95px 95px 0;
+    border-style: solid;
+    border-color: transparent transparent #e06060 transparent;
+  }
 }
 /*# sourceMappingURL=style.css.map */

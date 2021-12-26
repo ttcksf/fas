@@ -5158,4 +5158,54 @@ body {
     border-color: transparent transparent #e06060 transparent;
   }
 }
+
+.contact1 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(224, 96, 96, 0.5)), color-stop(40%, rgba(224, 96, 96, 0.8)), to(#e06060));
+  background: linear-gradient(to right, rgba(224, 96, 96, 0.5), rgba(224, 96, 96, 0.8) 40%, #e06060);
+}
+
+.contact1__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact1__head h1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact1__head img {
+  width: 40%;
+}
+
+.contact1__text {
+  color: #fff;
+  font-size: 15px;
+}
+
+.contact1__mail {
+  background: #ff5053;
+  border: 3px solid #fff;
+  padding: 1rem;
+}
+
+.contact1__mail a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+}
+
+.contact1__mail a img {
+  margin-right: 1rem;
+}
 /*# sourceMappingURL=style.css.map */

@@ -3676,3 +3676,57 @@ body {
     }
   }
 }
+.contact1{
+  background: -moz-linear-gradient(
+      left,
+      rgba(224, 96, 96, 0.3),
+      rgba(224, 96, 96, 0.5) 70%,
+      rgba(224, 96, 96, 0.7)
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(224, 96, 96, 0.3),
+      rgba(224, 96, 96, 0.5) 70%,
+      rgba(224, 96, 96, 0.7)
+    );
+    background: linear-gradient(
+      to right,
+      rgba(224, 96, 96, 0.5),
+      rgba(224, 96, 96, 0.8) 40%,
+      rgba(224, 96, 96, 1)
+    );
+    
+    &__head{
+      display: flex;
+      align-items: center;
+      h1{
+        flex: 1;
+        color: $Wcolor;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      img{
+        width: 40%;
+      }
+    }
+    &__text{
+      color: $Wcolor;
+      font-size: 15px;
+      
+    }
+    &__mail{
+      background: $Rcolor;
+      border: 3px solid $Wcolor;
+      padding: 1rem;
+      a{
+        color: $Wcolor;
+        font-weight: 700;
+        font-size: 18px;
+        position: relative;
+        img{
+          margin-right: 1rem;
+        }
+      }
+    }
+}

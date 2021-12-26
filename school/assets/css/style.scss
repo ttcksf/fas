@@ -3901,6 +3901,73 @@ body {
         
       }
     }
+  } 
+}
+
+//faq
+.faq{
+  padding-top: 30px;
+  @include mq(md){
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px; 
   }
-  
+  @include mq(lg){
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  &__head{
+    text-align: center;
+    img{
+      max-width: 70px;
+      @include mq(md){
+        max-width: 90px;
+      }
+      @include mq(lg){
+        max-width: 110px;
+      }
+    }
+    h1{
+      font-size: 20px;
+      font-weight: 700;
+
+      @include mq(md){
+        font-size: 32px;
+      }
+      @include mq(lg){
+        font-size: 45px;
+      }
+    }
+  }
+  &__lists{
+    padding: 30px 0 30px 15px;
+    @include mq(md){
+      padding: 50px 0  50px 30px;
+    }
+    @include mq(lg){
+      padding: 100px 0 100px 150px;
+    }
+  }
+  &__list{
+    margin-bottom: 10px;
+    font-size: 15px;
+    @include mq(md){
+      font-size: 18px;
+    }
+    @include mq(lg){
+      font-size: 26px;
+    }
+    &--q{
+      color: $MBcolor;
+      font-size: 15px;
+      font-weight: 700;
+      text-indent: -1rem;
+      margin-bottom: 10px;
+    }
+    &--a{
+      font-size: 15px;
+      text-indent: -1rem;
+    }
+  }
 }

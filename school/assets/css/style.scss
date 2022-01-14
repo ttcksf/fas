@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap");
 //breakpoints
 $breakpoints: (
   "sm": "(max-width: 767px)",
@@ -135,24 +135,28 @@ body {
     margin-top: 30px;
     h1 {
       color: $MBcolor;
-      font-size: 2.5rem;
+      font-size: 35px;
       letter-spacing: 0.3rem;
-      font-weight: 700;
+      font-weight: 600;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      margin-bottom: -12px;
       @include mq(md) {
         font-size: 72px;
+        margin-bottom: -24px;
       }
       @include mq(lg) {
-        font-size: 93px;
+        font-size: 89px;
         letter-spacing: 0.8rem;
+        margin-bottom: -32px;
       }
     }
     p {
-      font-size: 16px;
+      font-size: 14px;
       @include mq(md) {
-        font-size: 18px;
+        font-size: 24px;
       }
       @include mq(lg) {
-        font-size: 24px;
+        font-size: 40px;
       }
     }
   }
@@ -431,13 +435,20 @@ body {
   background: url("../img/bg-merit.png") no-repeat center center / cover;
 }
 .merit__inner {
+  padding-top: 21px;
+  @include mq(md) {
+    padding-top: 31px;
+  }
+  @include mq(lg) {
+    padding-top: 71px;
+  }
 }
 .merit__head {
   text-align: center;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
-  margin: 40px 0 30px;
+  margin: 0 0 30px;
   @include mq(md) {
     font-size: 32px;
   }
@@ -446,7 +457,6 @@ body {
   }
   img {
     width: 180px;
-    vertical-align: baseline;
     @include mq(md) {
       width: 240px;
     }
@@ -489,7 +499,8 @@ body {
     align-items: center;
     background: $BBcolor;
     color: $Wcolor;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: bold;
     @include mq(md) {
       font-size: 28px;
     }
@@ -667,6 +678,12 @@ body {
     }
     img {
       margin-bottom: 20px;
+      max-width: 100%;
+      @include mq(lg){
+        margin: 0 auto;
+        width: 1080px;
+        padding-bottom: 30px;
+      }
     }
     h2 {
       font-size: 18px;
@@ -675,24 +692,24 @@ body {
       line-height: 1.2;
       border: 1px solid $Rcolor;
       padding: 1rem 2rem;
-
       @include mq(md) {
         font-size: 32px;
       }
       @include mq(lg) {
-        font-size: 54px;
+        font-size: 60px;
+        text-align: left;
         position: absolute;
         top: 20%;
         right: 5%;
         padding: 0 2rem 1rem;
       }
       span {
-        font-size: 15px;
+        font-size: 14px;
         @include mq(md) {
           font-size: 24px;
         }
         @include mq(lg) {
-          font-size: 32px;
+          font-size: 34px;
         }
       }
     }
@@ -717,14 +734,13 @@ body {
       padding: 0.5rem 1rem;
       position: relative;
       margin: 0 auto;
+      max-width: 100%;
       @include mq(md) {
         font-size: 30px;
-        padding: 2rem;
       }
       @include mq(lg) {
         font-size: 38px;
-        padding: 4rem 2rem;
-        width: 768px;
+        width: 1080px;
       }
       &:after {
         content: "";
@@ -741,8 +757,8 @@ body {
           border-top: 40px solid $BBcolor;
         }
         @include mq(lg) {
-          border-right: 390px solid transparent;
-          border-left: 390px solid transparent;
+          border-right: 542px solid transparent;
+          border-left: 542px solid transparent;
           border-top: 60px solid $BBcolor;
         }
       }
@@ -775,6 +791,40 @@ body {
       &:nth-child(2) {
         margin-top: 50px;
       }
+      &:nth-child(1){
+        img{
+          @include mq(lg){
+            width: 98px;
+          }
+        }
+      }
+      &:nth-child(2){
+        img{
+          @include mq(lg){
+            width: 89px;
+          }
+        }
+      }
+      &:nth-child(3){
+        img{
+          @include mq(lg){
+            width: 95px;
+          }
+        }
+      }
+      &:nth-child(4){
+        img{
+          @include mq(lg){
+            width: 110px;
+          }
+        }
+      }
+      @include mq(md) {
+        margin-bottom: 20px;
+      }
+      @include mq(lg) {
+        margin-bottom: 30px;
+      }
       @include mq(lg) {
         background: transparent;
         width: 25%;
@@ -788,12 +838,7 @@ body {
       img {
         display: inline-block;
         width: 45px;
-        @include mq(md) {
-          margin-bottom: 20px;
-        }
-        @include mq(lg) {
-          margin-bottom: 30px;
-        }
+        
       }
       p {
         font-size: 15px;
@@ -3745,15 +3790,15 @@ body {
         border-width: 0 95px 95px 0;
         border-style: solid;
         border-color: transparent transparent rgba(224, 96, 96, 1) transparent;
-        @include mq(lg){
+        @include mq(lg) {
           border-width: 0 110px 110px 0;
-          right: -109px
+          right: -109px;
         }
       }
-      @include mq(md){
+      @include mq(md) {
         font-size: 24px;
       }
-      @include mq(lg){
+      @include mq(lg) {
         font-size: 24px;
         height: 110px;
       }

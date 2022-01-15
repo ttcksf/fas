@@ -918,7 +918,7 @@ body {
 @media (min-width: 1025px) {
   .problem__example--data img {
     margin: 0 auto;
-    width: 1080px;
+    width: 1026px;
     padding-bottom: 30px;
   }
 }
@@ -1003,7 +1003,7 @@ body {
 @media (min-width: 1025px) {
   .problem__example--Fn h2 {
     font-size: 38px;
-    width: 1080px;
+    width: 1026px;
   }
 }
 
@@ -1029,8 +1029,8 @@ body {
 
 @media (min-width: 1025px) {
   .problem__example--Fn h2:after {
-    border-right: 542px solid transparent;
-    border-left: 542px solid transparent;
+    border-right: 513px solid transparent;
+    border-left: 513px solid transparent;
     border-top: 60px solid #003a6a;
   }
 }
@@ -1046,7 +1046,7 @@ body {
 @media (min-width: 1025px) {
   .problem__example--Fn-functions {
     background: #efefef;
-    width: 768px;
+    width: 1026px;
     margin: 0 auto;
     padding-top: 50px;
     -webkit-box-pack: center;
@@ -1125,11 +1125,11 @@ body {
     background: transparent;
     width: 25%;
     margin-right: 30px;
-    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
     margin: 50px 0 0 0;
   }
   .problem__example--Fn-function:nth-child(4) {
-    border-right: 2px solid #fff;
+    border-right: none;
   }
 }
 
@@ -1142,6 +1142,26 @@ body {
   font-size: 15px;
   line-height: 1.2;
   font-weight: 700;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .problem__example--Fn-function p {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .problem__example--Fn-function p {
+    font-size: 26px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
 }
 
 .problem__example--fact {
@@ -1190,14 +1210,14 @@ body {
 @media (min-width: 1025px) {
   .problem__example--fact p:nth-child(2) {
     font-size: 54px;
+    width: 1026px;
+    margin: 0 auto;
   }
 }
 
 .reason {
   margin-top: 50px;
-  background-color: rgba(69, 230, 222, 0.2);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(50%, transparent), to(transparent));
-  background-image: linear-gradient(#fff 50%, transparent 50%, transparent 100%);
+  background: url(../img/reason__bg.png);
   background-size: 8px 8px;
   padding-bottom: 30px;
 }
@@ -1244,6 +1264,7 @@ body {
   background: #fff;
   width: 70%;
   text-align: center;
+  letter-spacing: 0.095em;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1334,9 +1355,15 @@ body {
   text-align: center;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reason__head p {
+    font-size: 20px;
+  }
+}
+
 @media (min-width: 1025px) {
   .reason__head p {
-    margin-bottom: 30px;
+    font-size: 26px;
   }
 }
 

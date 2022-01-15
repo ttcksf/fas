@@ -681,7 +681,7 @@ body {
       max-width: 100%;
       @include mq(lg){
         margin: 0 auto;
-        width: 1080px;
+        width: 1026px;
         padding-bottom: 30px;
       }
     }
@@ -740,7 +740,7 @@ body {
       }
       @include mq(lg) {
         font-size: 38px;
-        width: 1080px;
+        width: 1026px;
       }
       &:after {
         content: "";
@@ -757,8 +757,8 @@ body {
           border-top: 40px solid $BBcolor;
         }
         @include mq(lg) {
-          border-right: 542px solid transparent;
-          border-left: 542px solid transparent;
+          border-right: 513px solid transparent;
+          border-left: 513px solid transparent;
           border-top: 60px solid $BBcolor;
         }
       }
@@ -768,7 +768,7 @@ body {
       flex-wrap: wrap;
       @include mq(lg) {
         background: $Gcolor;
-        width: 768px;
+        width: 1026px;
         margin: 0 auto;
         padding-top: 50px;
         justify-content: center;
@@ -829,10 +829,10 @@ body {
         background: transparent;
         width: 25%;
         margin-right: 30px;
-        border-left: 2px solid $Wcolor;
+        border-right: 2px solid $Wcolor;
         margin: 50px 0 0 0;
         &:nth-child(4) {
-          border-right: 2px solid $Wcolor;
+          border-right: none;
         }
       }
       img {
@@ -844,6 +844,20 @@ body {
         font-size: 15px;
         line-height: 1.2;
         font-weight: 700;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        @include mq(md){
+          font-size: 20px;
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+        @include mq(lg){
+          font-size: 26px;
+          margin-top: 28px;
+          margin-bottom: 28px;
+        }
       }
     }
   }
@@ -874,6 +888,8 @@ body {
         }
         @include mq(lg) {
           font-size: 54px;
+          width: 1026px;
+          margin: 0 auto;
         }
       }
     }
@@ -883,12 +899,7 @@ body {
 //reason
 .reason {
   margin-top: 50px;
-  background-color: rgba(69, 230, 222, 0.2);
-  background-image: linear-gradient(
-    #fff 50%,
-    transparent 50%,
-    transparent 100%
-  );
+  background: url(../img/reason__bg.png);
   background-size: 8px 8px;
   padding-bottom: 30px;
   @include mq(md) {
@@ -922,6 +933,7 @@ body {
     background: $Wcolor;
     width: 70%;
     text-align: center;
+    letter-spacing: 0.095em;
     @include mq(md) {
       font-size: 32px;
     }
@@ -979,8 +991,11 @@ body {
     font-size: 15px;
     font-weight: 700;
     text-align: center;
+    @include mq(md){
+      font-size: 20px;
+    }
     @include mq(lg) {
-      margin-bottom: 30px;
+      font-size: 26px;
     }
   }
 }

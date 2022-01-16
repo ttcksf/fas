@@ -52,7 +52,6 @@ body {
 }
 .contentInner {
   max-width: 100%;
-  padding: 0 15px;
   margin: 0 auto;
   @include mq(md) {
     padding: 0 30px;
@@ -2582,6 +2581,9 @@ body {
   }
   &__head {
     padding: 2rem 1rem;
+    @include mq(lg){
+      padding: 0;
+    }
     &--text {
       div {
         @include mq(md) {
@@ -2660,7 +2662,6 @@ body {
     &--method {
       background: rgba(255, 80, 83, 0.2);
       border: 2px solid $Rcolor;
-      padding: 2rem 3rem;
       &:first-child,
       &:nth-child(2) {
         border-bottom: none;
@@ -2669,11 +2670,11 @@ body {
         }
       }
       @include mq(lg) {
-        width: calc(33% - 20px * 2 / 3);
+        width: calc(33% - 10px * 2 / 3);
         position: relative;
-        padding-top: calc(33% - 20px * 2 / 3);
+        padding-top: calc(33% - 10px * 2 / 3);
         height: 0;
-        margin-right: 20px;
+        margin-right: 10px;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -2682,17 +2683,7 @@ body {
         }
       }
       &-inner {
-        @include mq(lg) {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 100%;
-          text-align: center;
-          padding: auto 0;
-          padding: 0 30px;
-        }
-
+        padding: 2rem;
         img {
         }
         p {
@@ -2705,7 +2696,8 @@ body {
           }
           @include mq(lg) {
             font-size: 20px;
-            text-align: center;
+            text-align: left;
+            margin-top: 10px;
           }
           span {
             color: $Rcolor;
@@ -2720,13 +2712,19 @@ body {
         }
         @include mq(lg) {
           position: absolute;
-          top: 50%;
+          top: 30%;
           left: 50%;
-          transform: translate(-50%, -50%);
+          transform: translate(-50%, -35%);
           width: 100%;
           height: 140px;
           text-align: center;
+          padding: 0 30px;
         }
+      }
+      &-content{
+        display: flex;
+        align-items: center;
+        height: 150px;
       }
     }
   }
@@ -2950,10 +2948,12 @@ body {
         }
         @include mq(md) {
           width: calc(50% - 20px * 1 / 2);
+          max-width: 310px;
           margin-right: 20px;
         }
         @include mq(lg) {
           width: calc(50% - 30px * 1 / 2);
+          max-width: 310px;
           margin-right: 30px;
         }
       }
@@ -3058,6 +3058,7 @@ body {
         margin-right: 20px;
         margin-top: 20px;
         height: 475px;
+        padding: 2rem 30px;
         &:first-child {
           margin-top: 20px;
         }
@@ -3120,7 +3121,7 @@ body {
       font-size: 32px;
     }
     @include mq(lg) {
-      margin: 100px 0;
+      margin: 100px 0 50px;
       font-size: 60px;
     }
   }
@@ -3147,6 +3148,7 @@ body {
   @include mq(lg) {
     display: flex;
     align-items: center;
+    padding-right: 20px;
   }
   &--title {
     text-align: center;

@@ -44,6 +44,25 @@ body {
   }
 }
 
+.sp-guide {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sp-guide {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .sp-guide {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .sp-only {
   display: block;
 }
@@ -996,6 +1015,7 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
   .problem__example--Fn h2 {
     font-size: 30px;
+    width: 626px;
   }
 }
 
@@ -1020,8 +1040,8 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .problem__example--Fn h2:after {
-    border-right: calc(50vw - 30px) solid transparent;
-    border-left: calc(50vw - 30px) solid transparent;
+    border-right: 313px solid transparent;
+    border-left: 313px solid transparent;
     border-top: 40px solid #003a6a;
   }
 }

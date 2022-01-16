@@ -60,6 +60,18 @@ body {
     max-width: 1200px;
   }
 }
+.sp-guide{
+  padding-left: 15px;
+  padding-right: 15px;
+  @include mq(md){
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include mq(lg){
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .sp-only {
   display: block;
   @include mq(md) {
@@ -736,6 +748,7 @@ body {
       max-width: 100%;
       @include mq(md) {
         font-size: 30px;
+        width: 626px;
       }
       @include mq(lg) {
         font-size: 38px;
@@ -751,8 +764,8 @@ body {
         border-left: calc(50vw - 15px) solid transparent;
         border-top: 20px solid $BBcolor;
         @include mq(md) {
-          border-right: calc(50vw - 30px) solid transparent;
-          border-left: calc(50vw - 30px) solid transparent;
+          border-right: 313px solid transparent;
+          border-left: 313px solid transparent;
           border-top: 40px solid $BBcolor;
         }
         @include mq(lg) {

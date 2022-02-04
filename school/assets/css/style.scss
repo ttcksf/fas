@@ -4049,23 +4049,27 @@ body {
       color: $MBcolor;
       font-size: 15px;
       font-weight: 700;
-      text-indent: -1rem;
+      text-indent: -1.75rem;
       margin-bottom: 10px;
       @include mq(md) {
         font-size: 18px;
+        text-indent: -2rem;
       }
       @include mq(lg) {
         font-size: 26px;
+        text-indent: -3rem;
       }
     }
     &--a {
       font-size: 15px;
-      text-indent: -1rem;
+      text-indent: -1.75rem;
       @include mq(md) {
         font-size: 18px;
+        text-indent: -1.5rem;
       }
       @include mq(lg) {
         font-size: 26px;
+        text-indent: -2.5rem;
       }
     }
   }

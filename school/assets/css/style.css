@@ -5643,36 +5643,40 @@ body {
   color: #00a0a8;
   font-size: 15px;
   font-weight: 700;
-  text-indent: -1rem;
+  text-indent: -1.75rem;
   margin-bottom: 10px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .faq__list--q {
     font-size: 18px;
+    text-indent: -2rem;
   }
 }
 
 @media (min-width: 1025px) {
   .faq__list--q {
     font-size: 26px;
+    text-indent: -3rem;
   }
 }
 
 .faq__list--a {
   font-size: 15px;
-  text-indent: -1rem;
+  text-indent: -1.75rem;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .faq__list--a {
     font-size: 18px;
+    text-indent: -1.5rem;
   }
 }
 
 @media (min-width: 1025px) {
   .faq__list--a {
     font-size: 26px;
+    text-indent: -2.5rem;
   }
 }
 

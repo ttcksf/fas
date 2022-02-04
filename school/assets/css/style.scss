@@ -130,7 +130,7 @@ body {
   }
 }
 .mainVisual__top {
-  background: url("../img/mv.png") no-repeat center center / cover;
+  background: url("../img/mv.jpg") no-repeat center center / cover;
   padding: 3rem 0;
   height: 500px;
   @include mq(md) {
@@ -688,7 +688,7 @@ body {
       max-width: 100%;
       @include mq(lg) {
         margin: 0 auto;
-        width: 1026px;
+        width: 830px;
         padding-bottom: 30px;
       }
     }
@@ -1269,7 +1269,7 @@ body {
       border-bottom: 30px solid $Rcolor;
     }
     @include mq(lg) {
-      top: -120px;
+      top: -80px;
       border: 60px solid transparent;
       border-bottom: 60px solid $Rcolor;
     }
@@ -1292,7 +1292,7 @@ body {
   &:before {
     background: url("../img/bg-learn.jpg") no-repeat center center / cover;
     content: "";
-    opacity: 0.3;
+    opacity: 0.2;
     filter: blur(10px);
     position: absolute;
     top: 0;
@@ -1618,12 +1618,13 @@ body {
             padding-left: 20px;
           }
           @include mq(lg) {
-            font-size: 45px;
+            font-size: 43px;
             margin-top: 10px;
             margin-bottom: 30px;
             width: 100%;
             text-align: left;
             padding-left: 30px;
+            line-height: 1.6;
           }
           span {
             color: $Rcolor;
@@ -1701,7 +1702,7 @@ body {
         border-width: 20px 20px 0 20px;
       }
       h3 {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 700;
         display: inline-block;
         color: $Wcolor;
@@ -1712,10 +1713,10 @@ body {
           background: url("../img/voice.png");
           background-repeat: no-repeat;
           background-size: contain;
-          width: 30px;
-          height: 30px;
-          bottom: 0;
-          right: -40px;
+          width: 60px;
+          height: 60px;
+          bottom: -10px;
+          right: -70px;
         }
       }
     }
@@ -1840,12 +1841,13 @@ body {
             padding-left: 20px;
           }
           @include mq(lg) {
-            font-size: 45px;
-            margin-top: 10px;
+            font-size: 43px;
+            margin-top: 15px;
             margin-bottom: 30px;
             width: 100%;
             text-align: left;
             padding-left: 30px;
+            line-height: 1.6;
           }
           span {
             color: $Rcolor;
@@ -1910,7 +1912,7 @@ body {
           @include mq(lg) {
             font-size: 32px;
             min-height: 485px;
-            height: 618px;
+            height: 568px;
           }
           span {
             @include mq(md) {
@@ -1944,7 +1946,7 @@ body {
           }
         }
         p {
-          background: rgba(#ff5053, 0.4);
+          background: #ffcccd;
           padding: 1rem;
           text-align: left;
           font-size: 15px;
@@ -1963,7 +1965,7 @@ body {
               font-size: 19px;
             }
             @include mq(lg) {
-              font-size: 26px;
+              font-size: 25px;
             }
             &.p {
               @include mq(md) {
@@ -1981,7 +1983,7 @@ body {
   &__bottom {
     &--title {
       text-align: center;
-      ackground-image: -moz-linear-gradient(
+      background-image: -moz-linear-gradient(
         to left,
         rgba(#ff6633, 0.8) 0%,
         rgba($Rcolor, 0.8) 100%
@@ -2019,7 +2021,7 @@ body {
         border-width: 20px 20px 0 20px;
       }
       h3 {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 700;
         display: inline-block;
         color: $Wcolor;
@@ -2030,10 +2032,10 @@ body {
           background: url("../img/voice.png");
           background-repeat: no-repeat;
           background-size: contain;
-          width: 30px;
-          height: 30px;
-          bottom: 0;
-          right: -40px;
+          width: 60px;
+          height: 60px;
+          bottom: -10px;
+          right: -70px;
         }
       }
     }
@@ -2220,10 +2222,11 @@ body {
             }
             @include mq(lg) {
               text-align: left;
-              font-size: 45px;
-              margin-top: 20px;
+              font-size: 43px;
+              margin-top: 10px;
               margin-bottom: 30px;
               width: 100%;
+              line-height: 1.6;
             }
             span {
               color: $Rcolor;
@@ -2311,8 +2314,8 @@ body {
                 margin-right: 10px;
               }
               @include mq(lg) {
-                width: 40%;
-                margin-right: 20px;
+                width: 50%;
+                margin-right: 10px;
               }
             }
             p {
@@ -2335,7 +2338,7 @@ body {
             }
             img.other__img--middle-02 {
               display: inline-block;
-              width: 50%;
+              width: 75%;
             }
           }
           p {
@@ -2344,7 +2347,7 @@ body {
               font-size: 18px;
             }
             @include mq(lg) {
-              font-size: 20px;
+              font-size: 18px;
             }
           }
         }
@@ -2371,7 +2374,7 @@ body {
           }
         }
         div.fas__img {
-          background: rgba(#ff5053, 0.4);
+          background: #ffcccd;
           padding: 1rem;
           text-align: center;
           font-size: 15px;
@@ -2405,8 +2408,8 @@ body {
                 margin-right: 10px;
               }
               @include mq(lg) {
-                width: 40%;
-                margin-right: 20px;
+                width: 50%;
+                margin-right: 10px;
               }
             }
             p {
@@ -2429,7 +2432,7 @@ body {
             }
             img.fas__img--middle-02 {
               display: inline-block;
-              width: 50%;
+              width: 75%;
             }
           }
           p {
@@ -2486,7 +2489,7 @@ body {
         border-width: 20px 20px 0 20px;
       }
       h3 {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 700;
         display: inline-block;
         color: $Wcolor;
@@ -2497,10 +2500,10 @@ body {
           background: url("../img/voice.png");
           background-repeat: no-repeat;
           background-size: contain;
-          width: 30px;
-          height: 30px;
-          bottom: 0;
-          right: -40px;
+          width: 60px;
+          height: 60px;
+          bottom: -10px;
+          right: -70px;
         }
       }
     }
@@ -2625,12 +2628,13 @@ body {
             padding-left: 20px;
           }
           @include mq(lg) {
-            font-size: 45px;
+            font-size: 43px;
             margin-top: 30px;
             margin-bottom: 30px;
             width: 100%;
             text-align: left;
             padding-left: 30px;
+            line-height: 1.6;
           }
           span {
             color: $Rcolor;
@@ -2692,8 +2696,9 @@ body {
         p {
           margin-top: 20px;
           font-weight: 700;
-          line-height: 1.2;
+          line-height: 1.6;
           font-size: 15px;
+          width: 100%;
           @include mq(md) {
             font-size: 18px;
           }
@@ -2709,7 +2714,7 @@ body {
               font-size: 20px;
             }
             @include mq(lg) {
-              font-size: 26px;
+              font-size: 23px;
             }
           }
         }
@@ -2773,7 +2778,7 @@ body {
         border-width: 20px 20px 0 20px;
       }
       h3 {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 700;
         display: inline-block;
         color: $Wcolor;
@@ -2784,10 +2789,10 @@ body {
           background: url("../img/voice.png");
           background-repeat: no-repeat;
           background-size: contain;
-          width: 30px;
-          height: 30px;
-          bottom: 0;
-          right: -40px;
+          width: 60px;
+          height: 60px;
+          bottom: -10px;
+          right: -70px;
         }
       }
     }
@@ -2904,12 +2909,13 @@ body {
             padding-left: 20px;
           }
           @include mq(lg) {
-            font-size: 45px;
+            font-size: 43px;
             margin-top: 30px;
             margin-bottom: 30px;
             flex: 1;
             text-align: left;
             padding-left: 30px;
+            line-height: 1.6;
           }
           span {
             color: $Rcolor;
@@ -3005,7 +3011,7 @@ body {
         border-width: 20px 20px 0 20px;
       }
       h3 {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 700;
         display: inline-block;
         color: $Wcolor;
@@ -3016,10 +3022,10 @@ body {
           background: url("../img/voice.png");
           background-repeat: no-repeat;
           background-size: contain;
-          width: 30px;
-          height: 30px;
-          bottom: 0;
-          right: -40px;
+          width: 60px;
+          height: 60px;
+          bottom: -10px;
+          right: -70px;
         }
       }
     }
@@ -3114,7 +3120,7 @@ body {
   }
 }
 .intro__inner {
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   h1 {
     font-size: 20px;
     font-weight: 700;
@@ -3193,7 +3199,7 @@ body {
 
 //study
 .study {
-  background: rgba($LBcolor, 0.2);
+  background: #f0f9fa;
   padding: 30px 15px;
   @include mq(md) {
     padding: 40px 30px;
@@ -3918,6 +3924,7 @@ body {
       }
       @include mq(lg) {
         flex: 1;
+        margin-top: 25px;
       }
       p {
         color: $Wcolor;
@@ -4155,7 +4162,7 @@ body {
       }
       .contact2__text {
         color: $Wcolor;
-        font-size: 15px;
+        font-size: 18px;
         @include mq(md) {
           flex: 1;
         }
@@ -4232,7 +4239,7 @@ body {
       }
       p {
         color: $Wcolor;
-        font-size: 15px;
+        font-size: 18px;
         text-align: center;
       }
       .contact2__tel--img {
@@ -4283,7 +4290,7 @@ body {
               max-width: 260px;
             }
             @include mq(lg) {
-              font-size: 45px;
+              font-size: 50px;
               border-bottom: none;
               flex: 1;
               max-width: 340px;

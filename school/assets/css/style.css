@@ -136,7 +136,7 @@ body {
 }
 
 .mainVisual__top {
-  background: url("../img/mv.png") no-repeat center center/cover;
+  background: url("../img/mv.jpg") no-repeat center center/cover;
   padding: 3rem 0;
   height: 500px;
 }
@@ -926,7 +926,7 @@ body {
 @media (min-width: 1025px) {
   .problem__example--data img {
     margin: 0 auto;
-    width: 1026px;
+    width: 830px;
     padding-bottom: 30px;
   }
 }
@@ -1756,7 +1756,7 @@ body {
 
 @media (min-width: 1025px) {
   .strong__fact:before {
-    top: -120px;
+    top: -80px;
     border: 60px solid transparent;
     border-bottom: 60px solid #ff5053;
   }
@@ -1785,7 +1785,7 @@ body {
 .learn:before {
   background: url("../img/bg-learn.jpg") no-repeat center center/cover;
   content: "";
-  opacity: 0.3;
+  opacity: 0.2;
   -webkit-filter: blur(10px);
           filter: blur(10px);
   position: absolute;
@@ -2234,12 +2234,13 @@ body {
 
 @media (min-width: 1025px) {
   .point1__head--text div h2 {
-    font-size: 45px;
+    font-size: 43px;
     margin-top: 10px;
     margin-bottom: 30px;
     width: 100%;
     text-align: left;
     padding-left: 30px;
+    line-height: 1.6;
   }
 }
 
@@ -2325,7 +2326,7 @@ body {
 }
 
 .point1__bottom--title h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   display: inline-block;
   color: #fff;
@@ -2338,10 +2339,10 @@ body {
   background: url("../img/voice.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30px;
-  height: 30px;
-  bottom: 0;
-  right: -40px;
+  width: 60px;
+  height: 60px;
+  bottom: -10px;
+  right: -70px;
 }
 
 .point1__bottom--voices {
@@ -2536,12 +2537,13 @@ body {
 
 @media (min-width: 1025px) {
   .point2__head--text div h2 {
-    font-size: 45px;
-    margin-top: 10px;
+    font-size: 43px;
+    margin-top: 15px;
     margin-bottom: 30px;
     width: 100%;
     text-align: left;
     padding-left: 30px;
+    line-height: 1.6;
   }
 }
 
@@ -2647,7 +2649,7 @@ body {
   .point2__head--vs-other p {
     font-size: 32px;
     min-height: 485px;
-    height: 618px;
+    height: 568px;
   }
 }
 
@@ -2700,7 +2702,7 @@ body {
 }
 
 .point2__head--vs-fas p {
-  background: rgba(255, 80, 83, 0.4);
+  background: #ffcccd;
   padding: 1rem;
   text-align: left;
   font-size: 15px;
@@ -2730,7 +2732,7 @@ body {
 
 @media (min-width: 1025px) {
   .point2__head--vs-fas p span {
-    font-size: 26px;
+    font-size: 25px;
   }
 }
 
@@ -2748,7 +2750,6 @@ body {
 
 .point2__bottom--title {
   text-align: center;
-  ackground-image: -moz-linear-gradient(to left, rgba(255, 102, 51, 0.8) 0%, rgba(255, 80, 83, 0.8) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 102, 51, 0.8)), to(rgba(255, 80, 83, 0.8)));
   background-image: linear-gradient(to right, rgba(255, 102, 51, 0.8) 0%, rgba(255, 80, 83, 0.8) 100%);
   padding: 1rem;
@@ -2784,7 +2785,7 @@ body {
 }
 
 .point2__bottom--title h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   display: inline-block;
   color: #fff;
@@ -2797,10 +2798,10 @@ body {
   background: url("../img/voice.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30px;
-  height: 30px;
-  bottom: 0;
-  right: -40px;
+  width: 60px;
+  height: 60px;
+  bottom: -10px;
+  right: -70px;
 }
 
 .point2__bottom--voices {
@@ -3067,10 +3068,11 @@ body {
 @media (min-width: 1025px) {
   .point3__head--text-inner div h2 {
     text-align: left;
-    font-size: 45px;
-    margin-top: 20px;
+    font-size: 43px;
+    margin-top: 10px;
     margin-bottom: 30px;
     width: 100%;
+    line-height: 1.6;
   }
 }
 
@@ -3222,8 +3224,8 @@ body {
 
 @media (min-width: 1025px) {
   .point3__head--vs-other div.other__img--top img, .point3__head--vs-other div.other__img--bottom img {
-    width: 40%;
-    margin-right: 20px;
+    width: 50%;
+    margin-right: 10px;
   }
 }
 
@@ -3257,7 +3259,7 @@ body {
 
 .point3__head--vs-other div.other__img--middle img.other__img--middle-02 {
   display: inline-block;
-  width: 50%;
+  width: 75%;
 }
 
 .point3__head--vs-other div.other__img p {
@@ -3272,7 +3274,7 @@ body {
 
 @media (min-width: 1025px) {
   .point3__head--vs-other div.other__img p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -3313,7 +3315,7 @@ body {
 }
 
 .point3__head--vs-fas div.fas__img {
-  background: rgba(255, 80, 83, 0.4);
+  background: #ffcccd;
   padding: 1rem;
   text-align: center;
   font-size: 15px;
@@ -3377,8 +3379,8 @@ body {
 
 @media (min-width: 1025px) {
   .point3__head--vs-fas div.fas__img--top img, .point3__head--vs-fas div.fas__img--bottom img {
-    width: 40%;
-    margin-right: 20px;
+    width: 50%;
+    margin-right: 10px;
   }
 }
 
@@ -3412,7 +3414,7 @@ body {
 
 .point3__head--vs-fas div.fas__img--middle img.fas__img--middle-02 {
   display: inline-block;
-  width: 50%;
+  width: 75%;
 }
 
 .point3__head--vs-fas div.fas__img p {
@@ -3468,7 +3470,7 @@ body {
 }
 
 .point3__bottom--title h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   display: inline-block;
   color: #fff;
@@ -3481,10 +3483,10 @@ body {
   background: url("../img/voice.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30px;
-  height: 30px;
-  bottom: 0;
-  right: -40px;
+  width: 60px;
+  height: 60px;
+  bottom: -10px;
+  right: -70px;
 }
 
 .point3__bottom--voices {
@@ -3662,12 +3664,13 @@ body {
 
 @media (min-width: 1025px) {
   .point4__head--text div h2 {
-    font-size: 45px;
+    font-size: 43px;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
     text-align: left;
     padding-left: 30px;
+    line-height: 1.6;
   }
 }
 
@@ -3759,8 +3762,9 @@ body {
 .point4__head--method-inner p {
   margin-top: 20px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.6;
   font-size: 15px;
+  width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -3790,7 +3794,7 @@ body {
 
 @media (min-width: 1025px) {
   .point4__head--method-inner p span {
-    font-size: 26px;
+    font-size: 23px;
   }
 }
 
@@ -3858,7 +3862,7 @@ body {
 }
 
 .point4__bottom--title h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   display: inline-block;
   color: #fff;
@@ -3871,10 +3875,10 @@ body {
   background: url("../img/voice.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30px;
-  height: 30px;
-  bottom: 0;
-  right: -40px;
+  width: 60px;
+  height: 60px;
+  bottom: -10px;
+  right: -70px;
 }
 
 .point4__bottom--voices {
@@ -4035,7 +4039,7 @@ body {
 
 @media (min-width: 1025px) {
   .point5__head--text div h2 {
-    font-size: 45px;
+    font-size: 43px;
     margin-top: 30px;
     margin-bottom: 30px;
     -webkit-box-flex: 1;
@@ -4043,6 +4047,7 @@ body {
             flex: 1;
     text-align: left;
     padding-left: 30px;
+    line-height: 1.6;
   }
 }
 
@@ -4159,7 +4164,7 @@ body {
 }
 
 .point5__bottom--title h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   display: inline-block;
   color: #fff;
@@ -4172,10 +4177,10 @@ body {
   background: url("../img/voice.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30px;
-  height: 30px;
-  bottom: 0;
-  right: -40px;
+  width: 60px;
+  height: 60px;
+  bottom: -10px;
+  right: -70px;
 }
 
 .point5__bottom--voices {
@@ -4307,7 +4312,7 @@ body {
 }
 
 .intro__inner {
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .intro__inner h1 {
@@ -4427,7 +4432,7 @@ body {
 }
 
 .study {
-  background: rgba(69, 230, 222, 0.2);
+  background: #f0f9fa;
   padding: 30px 15px;
 }
 
@@ -5439,6 +5444,7 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    margin-top: 25px;
   }
 }
 
@@ -5785,7 +5791,7 @@ body {
 
 .contact2__head--inner .contact2__text {
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -5900,7 +5906,7 @@ body {
 
 .contact2__contact--tel p {
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -5991,7 +5997,7 @@ body {
 
 @media (min-width: 1025px) {
   .contact2__contact--tel .contact2__tel--img-pc a {
-    font-size: 45px;
+    font-size: 50px;
     border-bottom: none;
     -webkit-box-flex: 1;
         -ms-flex: 1;

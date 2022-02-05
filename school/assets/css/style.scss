@@ -137,7 +137,7 @@ body {
     height: 700px;
   }
   @include mq(lg) {
-    height: 100vh;
+    height: 880px;
   }
   &--text {
     text-align: center;
@@ -223,7 +223,7 @@ body {
       width: calc(60% - 30px * 1 / 2);
       margin-right: 30px;
       margin-top: 50px;
-      height: 300px;
+      height: 350px;
       margin-left: 30px;
     }
     &-inner {
@@ -2699,6 +2699,7 @@ body {
           line-height: 1.6;
           font-size: 15px;
           width: 100%;
+
           @include mq(md) {
             font-size: 18px;
           }
@@ -2706,6 +2707,11 @@ body {
             font-size: 20px;
             text-align: left;
             margin-top: 10px;
+          }
+          &.method-last{
+            @include mq(lg){
+              margin-left: 20px;
+            }
           }
           span {
             color: $Rcolor;

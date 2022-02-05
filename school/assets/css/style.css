@@ -149,7 +149,7 @@ body {
 
 @media (min-width: 1025px) {
   .mainVisual__top {
-    height: 100vh;
+    height: 880px;
   }
 }
 
@@ -261,7 +261,7 @@ body {
     width: calc(60% - 30px * 1 / 2);
     margin-right: 30px;
     margin-top: 50px;
-    height: 300px;
+    height: 350px;
     margin-left: 30px;
   }
 }
@@ -3778,6 +3778,12 @@ body {
     font-size: 20px;
     text-align: left;
     margin-top: 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .point4__head--method-inner p.method-last {
+    margin-left: 20px;
   }
 }
 
